@@ -2,6 +2,7 @@
 
     var width, height, largeHeader, canvas, ctx, triangles, target, animateHeader = true;
     var colors = ['72,35,68', '43,81,102', '66,152,103', '250,178,67', '224,33,48'];
+    var colors = ['224,33,48','204,204,204', '255,224,11', '78,192,175', '132,211,230'];
 
     // Main
     initHeader();
@@ -23,11 +24,14 @@
 
         // create particles
         triangles = [];
-        for(var x = 0; x < 480; x++) {
-            addTriangle(x*10);
-        }
+                        // 480 ; number of particles
+        for(var x = 0; x < 240; x++) {
+            addTriangle(x*5); // 10
+        } 
+        
     }
 
+        // delay function
     function addTriangle(delay) {
         setTimeout(function() {
             var t = new Triangle();
@@ -39,12 +43,13 @@
     function initAnimation() {
         animate();
     }
-
+    
+    // moving length and time of the animations
     function tweenTriangle(tri) {
         var t = Math.random()*(2*Math.PI);
-        var x = (200+Math.random()*100)*Math.cos(t) + width*0.5;
-        var y = (200+Math.random()*100)*Math.sin(t) + height*0.5-20;
-        var time = 4+3*Math.random();
+        var x = (200+Math.random()*100)*Math.cos(t) + width*0.5; //200 + math, how far the objects go
+        var y = (200+Math.random()*100)*Math.sin(t) + height*0.5-20;// 200
+        var time = 5+4*Math.random(); // 4+3*math.random(); how long the tween last
 
         TweenLite.to(tri.pos, time, {x: x,
             y: y, ease:Circ.easeOut,
@@ -59,9 +64,10 @@
         window.addEventListener('scroll', scrollCheck);
         window.addEventListener('resize', resize);
     }
-
+    
+    // if the window is out of the view(height), then the animation is stopped. 
     function scrollCheck() {
-        if(document.body.scrollTop > height) animateHeader = false;
+        if(document.body.scrollTop > height/2) animateHeader = false;
         else animateHeader = true;
     }
 
@@ -95,8 +101,9 @@
         })();
 
         function init() {
-            _this.pos.x = width*0.5;
+            _this.pos.x = width*0.5; // orgin of the animation
             _this.pos.y = height*0.5-20;
+            // size of the triangle
             _this.coords[0].x = -10+Math.random()*40;
             _this.coords[0].y = -10+Math.random()*40;
             _this.coords[1].x = -10+Math.random()*40;
@@ -105,11 +112,13 @@
             _this.coords[2].y = -10+Math.random()*40;
             _this.scale = 0.1+Math.random()*0.3;
             _this.color = colors[Math.floor(Math.random()*colors.length)];
-            setTimeout(function() { _this.alpha = 0.8; }, 10);
+            setTimeout(function() { _this.alpha = 0.7; }, 10); // alpha = 0.8
         }
-
+        
         this.draw = function() {
-            if(_this.alpha >= 0.005) _this.alpha -= 0.005;
+                           // 0.005              // 0.005
+            if(_this.alpha >= 0.005) _this.alpha -= 0.003;// how fast the objects fade away
+                           //  0
             else _this.alpha = 0;
             ctx.beginPath();
             ctx.moveTo(_this.coords[0].x+_this.pos.x, _this.coords[0].y+_this.pos.y);

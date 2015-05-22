@@ -1252,7 +1252,7 @@ a.btn-mod:focus{
 	min-height: 40px;
 	position: fixed;
 	top: 10px;
-	left: 10px;	
+	right: 10px;	
 	background: rgba(0,0,0, 0);
 	cursor: pointer;
 	
@@ -1263,8 +1263,13 @@ a.btn-mod:focus{
 	
 	z-index: 201;
 }
+
+.nbc-bg, .js-nwc-bg{
+	background: rgba(18,18,18, .1);
+}
+
 .nbc-bg, .js-nbc-bg{
-	background: rgba(18,18,18, .93);
+	background: rgba(18,18,18, .5);
 }
 .nbc-logo-wrap{
 	float: left;
@@ -1324,25 +1329,32 @@ a.btn-mod:focus{
 }
 .nbc-bg .nbc-menu-button,
 .js-nbc-bg .nbc-menu-button{
-	/*border-left: 1px solid rgba(255,255,255, .08);*/
+	border-left: 1px solid rgba(255,255,255, .1);
 }
 
 .nbc-menu-icon{
 	display: block;
 	width: 27px;
-	height: 3px;
+	height: 2px;
 	position: absolute;
-	top: 50%;
+	top: 50%;  
 	left: 50%;
-	margin: -2px 0 0 -14px;
-	background: rgba(255,255,255, .9);
-	
-	-webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);  
-    -moz-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
-    -o-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
-    -ms-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
-    transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+	margin: 2px 0 0 -14px;
+    color:transparent;
+
+    
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .50s ease-in-out;
+  -moz-transition: .50s ease-in-out;
+  -o-transition: .50s ease-in-out;
+  transition: .25s ease-in-out;  
+    
 }
+
+/*icon - click and sinking*/
 .nbc-menu-button:active .nbc-menu-icon{
 	-webkit-transform: translateX(1px) translateY(1px);
     -moz-transform: translateX(1px) translateY(1px);
@@ -1352,22 +1364,65 @@ a.btn-mod:focus{
 .js-nbc-bg .nbc-menu-icon{
 	opacity: 1;
 }
-.nbc-menu-icon:before{
-	content: " ";
-	width: 100%;
-	height: 100%;
+
+
+.nbc-menu-icon-hamburger-animation{
+ 
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .50s ease-in-out;
+  -moz-transition: .50s ease-in-out;
+  -o-transition: .50s ease-in-out;
+  transition: .50s ease-in-out;    
+
+    
+}
+
+.nbc-menu-icon-before{
+	display: block;
+	width: 27px;
+	height: 2px;
 	position: absolute;
 	top: -7px;
-	left: 0;
-	background: rgba(255,255,255, .9);
+	left: 0px;
+	background: rgba(102,102,102, 1);
 	
-	-webkit-transition: background 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);  
-    -moz-transition: background 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
-    -o-transition: background 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
-    -ms-transition: background 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
-    transition: background 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
 }
-.nbc-menu-icon:after{
+
+.nbc-menu-icon-middle{
+	display: block;
+	width: 27px;
+	height: 2px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: rgba(153,153,153, 1);
+}
+
+.nbc-menu-icon-after{
+	display: block;
+	width: 27px;
+	height: 2px;
+	position: absolute;
+	top: 7px;
+	left: 0px;
+	background: rgba(204,204,204, 1);	
+
+}
+
+.nbc-menu-icon-all-white{
+
+	background: rgba(225,225,225, 1);
+  
+
+}
+
+
+
+/*
+.nbc-menu-icon:before{
 	content: " ";
 	width: 100%;
 	height: 100%;
@@ -1375,34 +1430,99 @@ a.btn-mod:focus{
 	top: 7px;
 	left: 0;
 	background: rgba(255,255,255, .9);
+    background: blue;
 	
 	-webkit-transition: background 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);  
     -moz-transition: background 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
     -o-transition: background 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
     -ms-transition: background 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
-    transition: background 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    transition: background 0.77s cubic-bezier(0.000, 0.000, 0.580, 1.000);
 }
+.nbc-menu-icon:after{
+	content: " ";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 14px;
+	left: 0;
+	background: rgba(255,255,255, .9);
+     background: red;
+	
+	-webkit-transition: background 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);  
+    -moz-transition: background 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
+    -o-transition: background 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -ms-transition: background 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
+    transition: background 1.47s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+}
+*/
+
+
 
 .nav-bar-compact:hover,
 .nav-bar-compact.js-opened,
 .nbc-bg:hover,
 .js-nbc-bg:hover{
-	background: rgba(18,18,18, .93);
+    /*    background of the hamburger menu   */
+	background: rgba(18,18,18, .5);
+
 }
+
+
 
 .nav-bar-compact:hover .nbc-menu-icon,
 .nav-bar-compact.js-opened .nbc-menu-icon{
-	background: rgba(255,255,255, .3);
+    background: yellow;  /*	yellow strip in the animation */
+    
 }
-.nav-bar-compact.js-opened .nbc-menu-icon{
+
+.nav-bar-compact.js-opened .nbc-menu-icon-before{
+	
+
+/*
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	transform: rotate(45deg);
+*/
+    transform: rotate(45deg);
+    top:0px;
+    
+	
+}
+
+/* hamburger menu becoming X */
+
+
+
+.nav-bar-compact.js-opened .nbc-menu-icon {
+
+    width:0px;
+    
+}
+
+.nav-bar-compact.js-opened .nbc-menu-icon-middle {
+	
+    width:0px;    
+	
+}
+
+
+
+.nav-bar-compact.js-opened .nbc-menu-icon-after {
 	
 	-webkit-transform: rotate(90deg);
 	-moz-transform: rotate(90deg);
 	-o-transform: rotate(90deg);
 	-ms-transform: rotate(90deg);
-	transform: rotate(90deg);
+	transform: rotate(-45deg);
+    top: 0px;
 	
 }
+
+
+
+
 .nav-bar-compact:hover .nbc-menu-icon:before,
 .nav-bar-compact.js-opened .nbc-menu-icon:before{
 	background: rgba(255,255,255, .3);

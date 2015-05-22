@@ -240,14 +240,39 @@
         
         $(window).scroll(function(){
         
+            
+            //this is ok for now
             if ($(window).scrollTop() >= 100) {
                 $(".nav-bar-compact").addClass("js-nbc-bg");
+                $(".nbc-menu-icon-hamburger-animation").addClass("nbc-menu-icon-all-white");
+                $('#timdai-menu-image').attr('src','images/logo-menu.png');
+             
             }
             else {
                 $(".nav-bar-compact").removeClass("js-nbc-bg");
+                $(".nbc-menu-icon-hamburger-animation").removeClass("nbc-menu-icon-all-white");
+                $('#timdai-menu-image').attr('src','images/logo-menu.png');
+                
+                
+                
+                
+                $( ".nav-bar-compact" ).mouseenter(function() {
+                $(".nbc-menu-icon-hamburger-animation").addClass("nbc-menu-icon-all-white");
+                });
+                
+                $( ".nav-bar-compact" ).mouseleave(function() {
+                $(".nbc-menu-icon-hamburger-animation").removeClass("nbc-menu-icon-all-white");
+                });
+  
+        
+
+                
+                
             }
             
         }); 
+        
+        
         
     }
     

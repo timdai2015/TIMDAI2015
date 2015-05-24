@@ -263,9 +263,6 @@
                 $( ".nav-bar-compact" ).mouseleave(function() {
                 $(".nbc-menu-icon-hamburger-animation").removeClass("nbc-menu-icon-all-white");
                 });
-  
-        
-
                 
                 
             }

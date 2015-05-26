@@ -994,6 +994,8 @@ a.btn-mod:focus{
 	letter-spacing: 3px;
 	color: rgba(255,255,255, .85) !important;
 }
+
+/*adding a left click mouse button upon hovering*/
 .scroll-down-icon{
 	width: 26px;
 	height: 100%;
@@ -1058,22 +1060,23 @@ By Svein Erik Farstad*/
 
 
 
-
 .scroll-down:hover .scroll-down-icon{
 	background: rgba(18,18,18, .0);
 }
 
+
+/*adding a left click mouse button upon hovering*/
+
 .scroll-down:hover .scroll-down-icon:after{
     animation:none;
-	width: 11px;
-	height: 11px;
+	width: 9px;
+	height: 9px;
     border-top-left-radius: 11px;
 	position: absolute;
-	top: 0;
-	left: 0px;
+	top: 2px;
+	left: 2px;
 	margin-left: 0px;
-	background: rgba(18,18,18, .3);
-    background: grey;
+	background: rgba(170,170,170, 1);
  
 }
 .scroll-down.light:hover .scroll-down-icon:after,

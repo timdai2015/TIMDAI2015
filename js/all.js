@@ -274,6 +274,19 @@
     }
     
     
+      /* ---------------------------------------------
+     Brain Hover Over Effects
+     --------------------------------------------- */
+    
+    $(document).ready(function(){
+    $(".brain-right-img").hover(function(){
+        $(".brain-item-right").toggleClass("brain-item-right-effect");
+    });
+    });
+    
+    
+    
+    
     /* ---------------------------------------------
      Nav panel classic
      --------------------------------------------- */

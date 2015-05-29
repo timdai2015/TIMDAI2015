@@ -2814,6 +2814,9 @@ a.logo:hover{
 	font-size: 12px;
 	color: #555;
     
+
+    opacity: 1;  /*----------opacity of the brain items---------*/
+    
     -webkit-transform: perspective(500px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
     -moz-transform: perspective(500px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
     -o-transform: perspective(500px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
@@ -2856,16 +2859,12 @@ a.logo:hover{
 
 
 
-
-
-
-
 .alt-services-title{
 	margin: 0 0 10px 0;
 	padding: 0;
 	font-size: 15px;
 	font-weight: 700;
-	color: #151515;
+/*	color: #151515;*/
 }
 
 /* Hover State */
@@ -2875,7 +2874,9 @@ a.logo:hover{
     -moz-transform: perspective(500px) rotateX(20deg) rotateY(0deg) rotateZ(0deg);
     -o-transform: perspective(500px) rotateX(20deg) rotateY(0deg) rotateZ(0deg);
     -ms-transform: perspective(500px) rotateX(20deg) rotateY(0deg) rotateZ(0deg);
-    transform: perspective(500px) rotateX(20deg) rotateY(0deg) rotateZ(0deg);
+    transform: perspective(500px) rotateX(0deg) rotateY(10deg) rotateZ(0deg);
+    
+    opacity: 1;
 }
 .alt-service-item:after{
     opacity: 0;
@@ -2956,6 +2957,49 @@ a.logo:hover{
     
 
 }
+
+
+
+.brain-item-right-effect {
+
+    opacity:1;
+}
+
+
+.brain-item-right p {
+
+    opacity: 1;
+}
+
+.brain-item-right:hover p{
+
+    opacity: 1;
+}
+
+
+/*item grey background*/
+/*
+.brain-item-right-effect:after{
+    
+    opacity: 1;
+    
+    content: "";
+    display: block;
+    width: 110%;
+    height: 130%;
+    position: absolute;
+    top: -15%;
+    left: -5%;
+    background: rgba(0,0,0, .05);
+    
+    -webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);  
+    -moz-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
+    -o-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -ms-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
+    transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+}
+*/
+
 
 
 

@@ -2913,10 +2913,16 @@ a.logo:hover{
     -ms-transition: all 0.5s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
     transition: all 0.5s cubic-bezier(0.000, 0.000, 0.580, 1.000);
 
+    
 
 }
 
 
+.brain-left-img-hide, .brain-right-img-hide {
+
+    opacity: 0;
+
+}
 
 
 
@@ -2955,7 +2961,6 @@ a.logo:hover{
     -ms-transition: all 0.5s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
     transition: all 0.5s cubic-bezier(0.000, 0.000, 0.580, 1.000);
     
-
 }
 
 
@@ -3072,6 +3077,123 @@ a.logo:hover{
     -ms-transform: scale(1);
     transform: scale(1);
 }
+
+
+
+
+.brain-right-skills  {
+
+    width: 100%;
+    position: absolute;
+    bottom: 175px;
+    left: -150px;
+    opacity: 0;
+    text-align: center;
+    
+    -webkit-transform: scale(0.8) translate(0px, 20px);
+    -moz-transform: scale(1.1) translate(0px, 20px);
+    -o-transform: scale(1.1) translate(0px, 20px);
+    -ms-transform: scale(1.1) translate(0px, 20px);
+    transform: scale(0.8) translate(120px, 0px);
+    
+    -webkit-transition: all 0.25s cubic-bezier(0.000, 0.000, 0.580, 1.000);  
+    -moz-transition: all 0.25s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
+    -o-transition: all 0.25s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -ms-transition: all 0.25s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
+    transition: all 0.55s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+        
+}
+
+
+.brain-left-skills {
+
+    width: 100%;
+    position: absolute;
+    bottom: 175px;
+    left: 120px;
+    opacity: 0;
+    text-align: center;
+    
+    
+    -webkit-transform: scale(0.8) translate(0px, 20px);
+    -moz-transform: scale(1.1) translate(0px, 20px);
+    -o-transform: scale(1.1) translate(0px, 20px);
+    -ms-transform: scale(1.1) translate(0px, 20px);
+    transform: scale(0.8) translate(-120px, 0px);
+    
+    -webkit-transition: all 0.25s cubic-bezier(0.000, 0.000, 0.580, 1.000);  
+    -moz-transition: all 0.25s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
+    -o-transition: all 0.25s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -ms-transition: all 0.25s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
+    transition: all 0.55s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+
+}
+
+
+.brain-right-skills-show-hide {
+
+    opacity:1;
+    
+    -webkit-transform: scale(0.8) translate(0px, 20px);
+    -moz-transform: scale(1.1) translate(0px, 20px);
+    -o-transform: scale(1.1) translate(0px, 20px);
+    -ms-transform: scale(1.1) translate(0px, 20px);
+    transform: scale(1.1) translate(0px, 0px);
+    
+
+}
+.brain-left-skills-show-hide {
+
+    opacity:1;
+    
+    -webkit-transform: scale(0.8) translate(0px, 20px);
+    -moz-transform: scale(1.1) translate(0px, 20px);
+    -o-transform: scale(1.1) translate(0px, 20px);
+    -ms-transform: scale(1.1) translate(0px, 20px);
+    transform: scale(1.1) translate(0px, 0px);
+    
+
+}
+
+
+
+
+
+
+.brain-right-skills a, .brain-left-skills a{
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 30px;
+    background: rgba(0,0,0, .7);
+    text-align: center;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ccc;
+    text-decoration: none;
+    
+    -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+    
+    -webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+    
+    -webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);  
+    -moz-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
+    -o-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -ms-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
+    transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+}
+
+
+
+
+
 
 
 

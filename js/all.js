@@ -281,6 +281,38 @@
     $(document).ready(function(){
     $(".brain-right-img").hover(function(){
         $(".brain-item-right").toggleClass("brain-item-right-effect");
+        
+        
+        
+         setTimeout(function(){
+                       $(".brain-left-img").toggleClass("brain-left-img-hide");
+                    }, 300);
+        
+        
+        setTimeout(function(){
+                       $(".brain-right-skills").toggleClass("brain-right-skills-show-hide");
+                    }, 300);
+        
+        
+    });
+    });
+    
+    $(document).ready(function(){
+    $(".brain-left-img").hover(function(){
+        $(".brain-item-left").toggleClass("brain-item-left-effect");
+        
+        
+        
+         setTimeout(function(){
+                       $(".brain-right-img").toggleClass("brain-right-img-hide");
+                    }, 300);
+        
+        
+        setTimeout(function(){
+                       $(".brain-left-skills").toggleClass("brain-left-skills-show-hide");
+                    }, 300);
+        
+        
     });
     });
     

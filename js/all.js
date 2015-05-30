@@ -286,12 +286,12 @@
         
          setTimeout(function(){
                        $(".brain-left-img").toggleClass("brain-left-img-hide");
-                    }, 300);
+                    }, 500);
         
         
-        setTimeout(function(){
+         setTimeout(function(){
                        $(".brain-right-skills").toggleClass("brain-right-skills-show-hide");
-                    }, 300);
+                    }, 500);
         
         
     });
@@ -300,17 +300,17 @@
     $(document).ready(function(){
     $(".brain-left-img").hover(function(){
         $(".brain-item-left").toggleClass("brain-item-left-effect");
-        
+        $(".brain-left-skills").attr('data-anim-type','fade-in-up');
         
         
          setTimeout(function(){
                        $(".brain-right-img").toggleClass("brain-right-img-hide");
-                    }, 300);
+                    }, 500);
         
         
-        setTimeout(function(){
+         setTimeout(function(){
                        $(".brain-left-skills").toggleClass("brain-left-skills-show-hide");
-                    }, 300);
+                    }, 500);
         
         
     });

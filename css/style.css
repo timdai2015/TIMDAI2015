@@ -2790,6 +2790,8 @@ a.logo:hover{
 
 
 /* ==============================
+   Now the Brain Section
+
    Alternative services
    ============================== */
 
@@ -2814,7 +2816,6 @@ a.logo:hover{
 	font-size: 12px;
 	color: #555;
     
-
     opacity: 1;  /*----------opacity of the brain items---------*/
     
     -webkit-transform: perspective(500px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
@@ -2829,6 +2830,7 @@ a.logo:hover{
     -ms-transition: all 0.3s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
     transition: all 0.3s cubic-bezier(0.000, 0.000, 0.580, 1.000);
 }
+
 .alt-service-icon{
 	width: 40px;
 	height: 40px;
@@ -2848,15 +2850,14 @@ a.logo:hover{
 
 
 .left-brain-icon{
+    
     color:grey;
 }
-
 
 #right-brain-icon-1{color:orangered;}
 #right-brain-icon-2{color:orange;}
 #right-brain-icon-3{color:forestgreen;}
 #right-brain-icon-4{color:dodgerblue;}
-
 
 
 .alt-services-title{
@@ -2867,17 +2868,44 @@ a.logo:hover{
 /*	color: #151515;*/
 }
 
-/* Hover State */
+
+/* top and bottom items are shifted */
+
+.brain-item-right-top, .brain-item-right-bottom {
+    left:-100px;
+}
+.brain-item-left-top, .brain-item-left-bottom {
+    left:100px;
+}
+
+
+
+
+
+/* -------------------Hover State -------------------*/
+
 
 .alt-service-wrap:hover .alt-service-item:not(.animating):not(.animate-in){    
-    -webkit-transform: perspective(500px) rotateX(20deg) rotateY(0deg) rotateZ(0deg);
-    -moz-transform: perspective(500px) rotateX(20deg) rotateY(0deg) rotateZ(0deg);
-    -o-transform: perspective(500px) rotateX(20deg) rotateY(0deg) rotateZ(0deg);
-    -ms-transform: perspective(500px) rotateX(20deg) rotateY(0deg) rotateZ(0deg);
+    -webkit-transform: perspective(500px) rotateX(0deg) rotateY(10deg) rotateZ(0deg);
+    -moz-transform: perspective(500px) rotateX(0deg) rotateY(10deg) rotateZ(0deg);
+    -o-transform: perspective(500px) rotateX(0deg) rotateY(10deg) rotateZ(0deg);
+    -ms-transform: perspective(500px) rotateX(0deg) rotateY(10deg) rotateZ(0deg);
     transform: perspective(500px) rotateX(0deg) rotateY(10deg) rotateZ(0deg);
     
     opacity: 1;
 }
+
+.alt-service-wrap:hover .brain-item-right:not(.animating):not(.animate-in){    
+    -webkit-transform: perspective(500px) rotateX(0deg) rotateY(-10deg) rotateZ(0deg);
+    -moz-transform: perspective(500px) rotateX(0deg) rotateY(-10deg) rotateZ(0deg);
+    -o-transform: perspective(500px) rotateX(0deg) rotateY(-10deg) rotateZ(0deg);
+    -ms-transform: perspective(500px) rotateX(0deg) rotateY(-10deg) rotateZ(0deg);
+    transform: perspective(500px) rotateX(0deg) rotateY(-10deg) rotateZ(0deg);
+    
+    opacity: 1;
+}
+
+
 .alt-service-item:after{
     opacity: 0;
     content: "";
@@ -2900,10 +2928,10 @@ a.logo:hover{
 
 .brain-left-img, .brain-right-img {
 
-    -webkit-transform: perspective(0px) rotateX(20deg) rotateY(0deg) rotateZ(0deg);
-    -moz-transform: perspective(0px) rotateX(20deg) rotateY(0deg) rotateZ(0deg);
-    -o-transform: perspective(0px) rotateX(20deg) rotateY(0deg) rotateZ(0deg);
-    -ms-transform: perspective(0px) rotateX(20deg) rotateY(0deg) rotateZ(0deg);
+    -webkit-transform: perspective(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    -moz-transform: perspective(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    -o-transform: perspective(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    -ms-transform: perspective(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
     transform: perspective(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
     
     
@@ -2912,16 +2940,11 @@ a.logo:hover{
     -o-transition: all 0.5s cubic-bezier(0.000, 0.000, 0.580, 1.000);
     -ms-transition: all 0.5s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
     transition: all 0.5s cubic-bezier(0.000, 0.000, 0.580, 1.000);
-
-    
-
 }
 
 
 .brain-left-img-hide, .brain-right-img-hide {
-
     opacity: 0;
-
 }
 
 
@@ -2929,10 +2952,10 @@ a.logo:hover{
 
 .brain-left-img:hover:not(.animating):not(.animate-in){
 
-    -webkit-transform: perspective(500px) rotateX(20deg) rotateY(0deg) rotateZ(0deg);
-    -moz-transform: perspective(500px) rotateX(20deg) rotateY(0deg) rotateZ(0deg);
-    -o-transform: perspective(500px) rotateX(20deg) rotateY(0deg) rotateZ(0deg);
-    -ms-transform: perspective(500px) rotateX(20deg) rotateY(0deg) rotateZ(0deg);
+    -webkit-transform: perspective(500px) rotateX(0deg) rotateY(-20deg) rotateZ(0deg);
+    -moz-transform: perspective(500px) rotateX(0deg) rotateY(-20deg) rotateZ(0deg);
+    -o-transform: perspective(500px) rotateX(0deg) rotateY(-20deg) rotateZ(0deg);
+    -ms-transform: perspective(500px) rotateX(0deg) rotateY(-20deg) rotateZ(0deg);
     transform: perspective(500px) rotateX(0deg) rotateY(-20deg) rotateZ(0deg);
     
     
@@ -3008,8 +3031,6 @@ a.logo:hover{
 
 
 
-
-
 .alt-service-wrap:hover .alt-service-item:after{
     opacity: 1;
 }
@@ -3023,9 +3044,9 @@ a.logo:hover{
     text-align: center;
     
     -webkit-transform: scale(0.8) translate(0px, 20px);
-    -moz-transform: scale(1.1) translate(0px, 20px);
-    -o-transform: scale(1.1) translate(0px, 20px);
-    -ms-transform: scale(1.1) translate(0px, 20px);
+    -moz-transform: scale(0.8) translate(0px, 20px);
+    -o-transform: scale(0.8) translate(0px, 20px);
+    -ms-transform: scale(0.8) translate(0px, 20px);
     transform: scale(0.8) translate(0px, 20px);
     
     -webkit-transition: all 0.25s cubic-bezier(0.000, 0.000, 0.580, 1.000);  
@@ -3083,49 +3104,54 @@ a.logo:hover{
 
 .brain-right-skills  {
 
-    width: 100%;
+    width: 200px;
+    height:250px;
     position: absolute;
-    bottom: 175px;
-    left: -150px;
+    top: 40px;
+    left: 100px;
     opacity: 0;
     text-align: center;
     
-    -webkit-transform: scale(0.8) translate(0px, 20px);
-    -moz-transform: scale(1.1) translate(0px, 20px);
-    -o-transform: scale(1.1) translate(0px, 20px);
-    -ms-transform: scale(1.1) translate(0px, 20px);
+    background: url("../images/brain-right-skill-image.png") no-repeat center center;
+    
+    -webkit-transform: scale(0.8) translate(120px, 20px);
+    -moz-transform: scale(0.8) translate(120px, 20px);
+    -o-transform: scale(0.8) translate(120px, 20px);
+    -ms-transform: scale(0.8) translate(120px, 20px);
     transform: scale(0.8) translate(120px, 0px);
     
     -webkit-transition: all 0.25s cubic-bezier(0.000, 0.000, 0.580, 1.000);  
     -moz-transition: all 0.25s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
     -o-transition: all 0.25s cubic-bezier(0.000, 0.000, 0.580, 1.000);
     -ms-transition: all 0.25s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
-    transition: all 0.55s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    transition: all 0.95s cubic-bezier(0.000, 0.000, 0.580, 1.000);
         
 }
 
 
 .brain-left-skills {
 
-    width: 100%;
+    width: 200px;
+    height:250px;
     position: absolute;
-    bottom: 175px;
-    left: 120px;
+    top: 40px;
+    right: 100px;
     opacity: 0;
     text-align: center;
     
+    background: url("../images/brain-left-skill-image.png") no-repeat center center;
     
-    -webkit-transform: scale(0.8) translate(0px, 20px);
-    -moz-transform: scale(1.1) translate(0px, 20px);
-    -o-transform: scale(1.1) translate(0px, 20px);
-    -ms-transform: scale(1.1) translate(0px, 20px);
+    -webkit-transform: scale(0.8) translate(-120px, 20px);
+    -moz-transform: scale(0.8) translate(-120px, 20px);
+    -o-transform: scale(0.8) translate(-120px, 20px);
+    -ms-transform: scale(0.8) translate(-120px, 20px);
     transform: scale(0.8) translate(-120px, 0px);
     
     -webkit-transition: all 0.25s cubic-bezier(0.000, 0.000, 0.580, 1.000);  
     -moz-transition: all 0.25s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
     -o-transition: all 0.25s cubic-bezier(0.000, 0.000, 0.580, 1.000);
     -ms-transition: all 0.25s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
-    transition: all 0.55s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    transition: all 0.95s cubic-bezier(0.000, 0.000, 0.580, 1.000);
 
 }
 
@@ -3134,10 +3160,10 @@ a.logo:hover{
 
     opacity:1;
     
-    -webkit-transform: scale(0.8) translate(0px, 20px);
-    -moz-transform: scale(1.1) translate(0px, 20px);
-    -o-transform: scale(1.1) translate(0px, 20px);
-    -ms-transform: scale(1.1) translate(0px, 20px);
+    -webkit-transform: scale(0.8) translate(0px, 0px);
+    -moz-transform: scale(1.1) translate(0px, 0px);
+    -o-transform: scale(1.1) translate(0px, 0px);
+    -ms-transform: scale(1.1) translate(0px, 0px);
     transform: scale(1.1) translate(0px, 0px);
     
 
@@ -3146,17 +3172,14 @@ a.logo:hover{
 
     opacity:1;
     
-    -webkit-transform: scale(0.8) translate(0px, 20px);
-    -moz-transform: scale(1.1) translate(0px, 20px);
-    -o-transform: scale(1.1) translate(0px, 20px);
-    -ms-transform: scale(1.1) translate(0px, 20px);
+    -webkit-transform: scale(1.1) translate(0px, 0px);
+    -moz-transform: scale(1.1) translate(0px, 0px);
+    -o-transform: scale(1.1) translate(0px, 0px);
+    -ms-transform: scale(1.1) translate(0px, 0px);
     transform: scale(1.1) translate(0px, 0px);
     
 
 }
-
-
-
 
 
 
@@ -3165,13 +3188,14 @@ a.logo:hover{
     height: 30px;
     line-height: 30px;
     padding: 0 30px;
-    background: rgba(0,0,0, .7);
+    background: rgba(0,0,0, .0);
+    border: 1px solid grey;
     text-align: center;
     font-size: 11px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: #ccc;
+    color: grey;
     text-decoration: none;
     
     -webkit-background-size: cover;
@@ -3189,8 +3213,6 @@ a.logo:hover{
     -ms-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
     transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
 }
-
-
 
 
 

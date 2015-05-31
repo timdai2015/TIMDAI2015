@@ -9,7 +9,7 @@
     $(window).load(function(){
         
         // Page loader
-        $(".page-loader b").delay(0).fadeOut();
+        $(".page-loader b").delay().fadeOut();
         $(".page-loader").delay(200).fadeOut("slow");
     
         init_scroll_navigate();

@@ -228,130 +228,57 @@ img:not([draggable]), embed, object, video {
 	position: fixed;
 	top: 0;
 	left: 0;
-	background: #dadada;
+	background: white;
 	z-index: 100000;	
 }
 
-@-webkit-keyframes spinner {
+
+
+
+
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.loading-bar {
+  display: inline-block;
+  width: 5px; /* size of the bars */
+  height: 20px;
+  border-radius: 4px;
+  animation: loading 1s ease-in-out infinite;
+}
+.loading-bar:nth-child(1) {
+  background-color: #3498db;
+  animation-delay: 0;
+}
+.loading-bar:nth-child(2) {
+  background-color: grey;
+  animation-delay: 0.09s;
+}
+.loading-bar:nth-child(3) {
+  background-color: #f1c40f;
+  animation-delay: .18s;
+}
+.loading-bar:nth-child(4) {
+  background-color: #27ae60;
+  animation-delay: .27s;
+}
+
+@keyframes loading {
   0% {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
+    transform: scale(1);
   }
-
-  100% {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
+  20% {
+    transform: scale(1, 2.2);
+  }
+  40% {
+    transform: scale(1);
   }
 }
 
-@-moz-keyframes spinner {
-  0% {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
 
-  100% {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
 
-@-o-keyframes spinner {
-  0% {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  100% {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes spinner {
-  0% {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  100% {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-.spinner{
-    display: inline-block;
-    width: 8em;
-    height: 8em;
-    margin: 1.5em;
-    margin: -4em 0 0 -4em;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    color: #999;
-    background: #f1f1f1;
-    text-align: center;
-    line-height: 8em;
-    font-weight: 400;
-    
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-}
-
-/* :not(:required) hides this rule from IE9 and below */
-.spinner:not(:required) {
-    -webkit-animation: spinner 1500ms infinite linear;
-    -moz-animation: spinner 1500ms infinite linear;
-    -ms-animation: spinner 1500ms infinite linear;
-    -o-animation: spinner 1500ms infinite linear;
-    animation: spinner 1500ms infinite linear;
-    -webkit-border-radius: 0.5em;
-    -moz-border-radius: 0.5em;
-    -ms-border-radius: 0.5em;
-    -o-border-radius: 0.5em;
-    border-radius: 0.5em;
-    -webkit-box-shadow: #f7f7f7 1.5em 0 0 0, #f7f7f7 1.1em 1.1em 0 0, #f7f7f7 0 1.5em 0 0, #f7f7f7 -1.1em 1.1em 0 0, #f7f7f7 -1.5em 0 0 0, #f7f7f7 -1.1em -1.1em 0 0, #f7f7f7 0 -1.5em 0 0, #f7f7f7 1.1em -1.1em 0 0;
-    -moz-box-shadow: #f7f7f7 1.5em 0 0 0, #f7f7f7 1.1em 1.1em 0 0, #f7f7f7 0 1.5em 0 0, #f7f7f7 -1.1em 1.1em 0 0, #f7f7f7 -1.5em 0 0 0, #f7f7f7 -1.1em -1.1em 0 0, #f7f7f7 0 -1.5em 0 0, #f7f7f7 1.1em -1.1em 0 0;
-    box-shadow: #f7f7f7 1.5em 0 0 0, #f7f7f7 1.1em 1.1em 0 0, #f7f7f7 0 1.5em 0 0, #f7f7f7 -1.1em 1.1em 0 0, #f7f7f7 -1.5em 0 0 0, #f7f7f7 -1.1em -1.1em 0 0, #f7f7f7 0 -1.5em 0 0, #f7f7f7 1.1em -1.1em 0 0;
-    background: none;
-    display: inline-block;
-    font-size: 16px;
-    width: 1em;
-    height: 1em;
-    overflow: hidden;
-    text-indent: 100%;
-    margin: -0.5em 0 0 -0.5em;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-  
-}
 
 
 /* ==============================

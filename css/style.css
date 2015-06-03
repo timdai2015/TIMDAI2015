@@ -2135,7 +2135,8 @@ a.logo:hover{
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
     
-	padding: 140px 0;
+    /*   space on top of the Titles   */
+	padding: 100px 0;
 }
 .small-section{
 	padding: 70px 0;
@@ -2443,7 +2444,7 @@ a.logo:hover{
 .bg-red{ background-color: #e13939 !important; }
 
 .section-title{
-	margin-bottom: 15px;
+	margin-bottom: 50px;
 	font-size: 35px;
 	font-weight: 800;
 	text-transform: uppercase;
@@ -3593,6 +3594,20 @@ a.logo:hover{
 .work-img{
 	position: relative;
 	overflow: hidden;
+    
+    /*-----greyscale of the works-------*/
+
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+
+    
+    -webkit-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);  
+    -moz-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000); 
+    -o-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+    -ms-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000); 
+    transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+    
+    
 }
 .work-img img{
 	width: 100%;
@@ -3601,17 +3616,39 @@ a.logo:hover{
 }
 .work-intro{
 	width: 100%;
-	height: 94px;
+    
+    /*------For Icons ---------*/
+	height: 164px; /* original height: 94px   */
+    bottom: 30px; /*------For Icons ---------*/
+    
 	padding: 22px 20px;
 	-webkit-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	position: absolute;
-	bottom: 0;
+	
 	left: 0;
 	text-align: center;
 	overflow: hidden;
+    
 }
+
+/*--------icons for work---------*/
+.work-icons span {
+
+    color:grey; 
+    font-size:21px;
+    margin-left: 10px;
+
+}
+
+.work-icons {
+
+    margin-top:50px;
+}
+
+
+
 .work-title{
 	margin: 0 0 8px 0;
 	padding: 0;
@@ -3620,12 +3657,31 @@ a.logo:hover{
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	line-height: 1.2;
+    color:rgba(78,192,175, 1);
 }
+
+.yellow-bar .work-title{
+
+    color:rgba(255,224,11, 1);
+}
+
+.green-bar .work-title{
+
+    color:rgba(78,192,175, 1);
+}
+
+.blue-bar .work-title{
+    color: rgba(132,211,230, 1);
+
+}
+
+
 .work-descr{	
 	font-size: 13px;
 	text-align: center;
-	color: #bbb;
+	color: white;
 	line-height: 1.2;
+    opacity: 1;
 }
 .work-grid-2 .work-title{
 	font-size: 14px;
@@ -3644,13 +3700,26 @@ a.logo:hover{
 }
 
 .work-grid-3 .work-title{
-	font-size: 14px;
+	font-size: 17px;
 	font-weight: 700;
 }
-.work-grid-3 .work-descr{
-	font-family: "Libre Baskerville", "Times New Roman", Times, serif;
+
+
+/*---------view detail attributes-------*/
+
+.work-grid-3 .view-more-details {
+    
+    font-family: "Open Sans", "Libre Baskerville", "Times New Roman", Times, serif;
+    margin: 0 0 8px 0;
+	padding: 0;
 	font-size: 14px;
-	font-style: italic;
+	line-height: 1.2;
+	text-transform: uppercase;
+    visibility: hidden;
+}
+.work-grid-3 .work-descr{
+	font-family: "Open Sans", "Libre Baskerville", "Times New Roman", Times, serif;
+	font-size: 14px;
 }
 
 
@@ -3669,18 +3738,37 @@ a.logo:hover{
 	/*top: 50%;*/
 	color: #fff;
 	
-	-webkit-transform: translateY(-99px);
-    -moz-transform: translateY(-99px);
-    transform: translateY(-99px);	
-	
-	z-index: 3; 
+	-webkit-transform: translateY(100px);
+    -moz-transform: translateY(100px);
+    transform: translateY(100px);	
+    z-index: 0; 
 }
 .work-item:hover .work-title{
-	color: #ccc;
+	color: Black;
+    visibility: hidden;
 }
 .work-item:hover .work-descr{
-	color: #999;
+	color: dimgrey;
+    visibility: hidden;
 }
+
+.work-item:hover span {
+    visibility: hidden;
+}
+
+
+/*---------view detail hoverover-------*/
+.work-item:hover .view-more-details{
+	color: rgba(153,153,153, 1);;
+    visibility:visible;
+    -webkit-transform: translateY(-30px);
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+    
+}
+
+
+
 .work-item .work-img:after{
 	content: " ";
 	display: block;
@@ -3689,7 +3777,9 @@ a.logo:hover{
 	position: absolute;
 	top: 0;
 	left: 0;
-	background: rgba(250,250,250, 0);
+    /*----- filter of the work image */
+	background: rgba(50,50,50, 0.7);
+    
 	
 	-webkit-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);  
     -moz-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000); 
@@ -3698,8 +3788,15 @@ a.logo:hover{
     transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
 	
 }
+
 .work-item:hover .work-img:after{	
-	background: rgba(20,20,20, .85);
+	background: rgba(20,20,20, .0);
+}
+
+
+.work-item:hover .work-img{	
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
 }
 
 .works-grid.hover-color .work-item:hover .work-intro,
@@ -3721,20 +3818,95 @@ a.logo:hover{
 }
 
 .work-item .work-img > img{
-	-webkit-transition: all 0.3s cubic-bezier(0.300, 0.100, 0.580, 1.000);  
-    -moz-transition: all 0.3s cubic-bezier(0.300, 0.100, 0.580, 1.000); 
-    -o-transition: all 0.3s cubic-bezier(0.300, 0.100, 0.580, 1.000);
-    -ms-transition: all 0.3s cubic-bezier(0.300, 0.100, 0.580, 1.000); 
-    transition: all 0.3s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+	-webkit-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);  
+    -moz-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000); 
+    -o-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+    -ms-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000); 
+    transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
 }
 
 .work-item:hover .work-img > img{
-	-webkit-transform: scale(1.05);
-	-moz-transform: scale(1.05);
-	-o-transform: scale(1.05);
-	-ms-transform: scale(1.05);
-	transform: scale(1.05);
+	-webkit-transform: scale(1.00);
+	-moz-transform: scale(1.00);
+	-o-transform: scale(1.00);
+	-ms-transform: scale(1.00);
+	transform: scale(1.00);
 }
+
+
+
+/*----------------extra hover over effect------------*/
+
+
+figcaption {
+
+}
+
+
+.work-item figcaption::before,
+.work-item figcaption::after {
+	position: absolute;
+/*	top: 0px;*/
+	right:0px;
+	bottom: 0px;
+	left: 0px;
+	content: '';
+	opacity: 1;
+    
+    height:94px;
+
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.55s;
+    
+
+}
+
+/* yellow color */
+.work-item.yellow-bar figcaption::before {
+	border-top: 7px solid rgba(255,224,11, 1);
+/*	border-bottom: 4px solid rgba(255,224,11, 1);    */
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+}
+
+/* green color */
+.work-item.green-bar figcaption::before {
+	border-top: 7px solid rgba(78,192,175, 1);
+/*	border-bottom: 4px solid rgba(78,192,175, 1);    */
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+}
+
+/* blue color */
+.work-item.blue-bar figcaption::before {
+	border-top: 7px solid rgba(132,211,230, 1);
+/*	border-bottom: 4px solid rgba(132,211,230, 1);    */
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+}
+
+
+
+
+/*
+.work-item figcaption::after {
+	border-right: 0px solid orange;
+	border-left: 0px solid orange;
+	-webkit-transform: scale(1,0);
+	transform: scale(1,0);
+}
+*/
+
+
+
+.work-item:hover figcaption::before,
+.work-item:hover figcaption::after {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+
 
 /*
  * Works full view

@@ -3509,7 +3509,7 @@ a.logo:hover{
 }
 .works-filter a{
 	display: inline-block;
-	margin: 0 5px;
+	margin: 0 1px;
 	padding: 6px 20px;
 	border: 1px solid rgba(0,0,0, .05);
 	color: #222;
@@ -3519,9 +3519,9 @@ a.logo:hover{
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	
-	-webkit-border-radius: 20px;
-	-moz-border-radius: 20px;
-	border-radius: 20px;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
 	
 	-webkit-transition: all 0.37s cubic-bezier(0.000, 0.000, 0.580, 1.000);  
     -moz-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
@@ -3554,6 +3554,13 @@ a.logo:hover{
 /*
  * Works grid 
  */
+
+
+.work-grid-3 a {
+
+    text-decoration: none;
+}
+
 
 .works-grid{
 	list-style: none;

@@ -4142,9 +4142,9 @@ figcaption {
  */
 
 .logo-item{
-    height: 80px;
+    height: 160px;
     text-align: center;
-    opacity: .65;
+    opacity: 1;
     
     -webkit-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);  
     -moz-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000); 

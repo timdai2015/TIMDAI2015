@@ -3146,6 +3146,20 @@ a.logo:hover{
 
 
 
+/* ==============================
+   Philosophy
+   ============================== */
+
+#philosophy-title,#philosophy-heading {
+    color:white;
+}
+
+
+
+
+
+
+
 
 /* ==============================
    Team
@@ -3351,7 +3365,7 @@ a.logo:hover{
 
 
 /* ==============================
-   Benefits (Process)
+   PHILOSOPHY
    ============================== */
 
 .benefits-grid{
@@ -3376,13 +3390,14 @@ a.logo:hover{
 	width: 100%;
 	position: absolute;
 	top: 0;
-	left: -50px;
+	left: -70px;
 	font-family: Montserrat, arial, sans-serif;
 	font-size: 120px;
 	font-weight: 700;
 	text-align: center;
 	line-height: 1;
-	color: rgba(0,0,0, .1);
+	color: rgba(255,255,255, .4);
+    z-index: 1;
 	
 	-webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);  
     -moz-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
@@ -3394,7 +3409,9 @@ a.logo:hover{
 	position: relative;
 	margin-bottom: 6px;
 	font-size: 32px;
-	color: #e41919;
+	color: rgba(255,224,11, 1) !important;
+    z-index: 1;
+
 }
 .benefit-title{
 	position: relative;
@@ -3404,11 +3421,15 @@ a.logo:hover{
 	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 1px;
+    color:white;
+    z-index: 1;
 }
 .benefits-descr{
 	position: relative;
 	font-size: 13px;
-	color: #777;
+	color: white;
+    font-weight: 700;
+    z-index: 1;
 }
 
 .benefit-item:after{
@@ -3419,7 +3440,7 @@ a.logo:hover{
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	background: rgba(0,0,0, .015);	
+	background: rgba(0,0,0, .5);	
 	opacity: 0;	
 	
     -webkit-transition: all 0.37s cubic-bezier(0.000, 0.000, 0.580, 1.000);  
@@ -3428,11 +3449,11 @@ a.logo:hover{
     -ms-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
     transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
     
-    -webkit-transform: scale(0.5);
-    -moz-transform: scale(0.5);
-    -o-transform: scale(0.5);
-    -ms-transform: scale(0.5);
-    transform: scale(0.5);
+    -webkit-transform: scale(0.4);
+    -moz-transform: scale(0.4);
+    -o-transform: scale(0.4);
+    -ms-transform: scale(0.4);
+    transform: scale(0.4);
 }
 .benefit-item:hover:after{
 	opacity: 1;	
@@ -3443,13 +3464,21 @@ a.logo:hover{
 	transform: none;
 }
 .benefit-item:hover .benefit-number{
-	color: rgba(0,0,0, .035);
-	-webkit-transform: scale(0.75);
-	-moz-transform: scale(0.75);
-	-o-transform: scale(0.75);
-	-ms-transform: scale(0.75);
-	transform: scale(0.75);
+	color: rgba(255,255,255, .4);
+	-webkit-transform: scale(0.55);
+	-moz-transform: scale(0.55);
+	-o-transform: scale(0.55);
+	-ms-transform: scale(0.55);
+	transform: scale(0.55);
 }
+
+#section-line-philosophy{
+
+    background:rgba(255,224,11, 1) !important;
+}
+
+
+
 
 
 /* ==============================
@@ -5671,30 +5700,34 @@ section:hover .small-item-carousel .owl-next{
 	border: none;
 }
 .tpl-minimal-tabs > li{
-	padding: 0 30px;
+	padding: 0 10px;
 	background: none !important;
 }
+
+
+/*----color of the tab buttons for philosophy section -----*/
 .tpl-minimal-tabs > li > a{
 	padding: 6px 20px 5px;
 	text-decoration: none;
-	color: #000;
-	background: none;
-	border: 1px solid transparent;
+	color: white;
+	background: rgba(50,50,50, 0.0);
+	border: 1px solid white;
+    font-weight: 600;
+    
 	
-	-webkit-border-radius: 20px;
-	-moz-border-radius: 20px;
-	border-radius: 20px;
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
 }
 .tpl-minimal-tabs > li > a:hover{
 	background: none;
-	border-color: #e9e9e9;
-	color: #777;
+	border-color: rgba(255,224,11, 1);
 }
 .tpl-minimal-tabs li.active a,
 .tpl-minimal-tabs li.active a:hover{
-	border: 1px solid #222 !important;
-	background: none !important;
-	color: #000;
+	border: 1px solid none !important;
+	background: rgba(255,224,11, 1) !important;
+	color: black;
 	cursor: default;
 }
 .tpl-minimal-tabs-cont{

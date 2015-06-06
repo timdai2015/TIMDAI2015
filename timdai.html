@@ -26,7 +26,8 @@
         <link type="text/css" media="screen" rel="stylesheet" href="nominee/awwwards.css" />      
         
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400' rel='stylesheet' type='text/css'>
-
+        
+        <link rel="stylesheet" href="css/YTPlayer.css">   
         
         <!-- Color Schemes :: Uncomment one for apply :: -->        
         <!-- <link rel="stylesheet" href="css/colors/orange.css"> -->
@@ -66,7 +67,7 @@
         <div class="page" id="top">
             
             <!-- Home Section -->
-            <section class="home-section bg-light bg-pattern parallax-4" data-background="" id="home">
+            <section class="home-section bg-light parallax-4" data-background="" id="home">
                 <div class="js-height-full" id="large-header">
                     
                     <!-- Canvas Animation -->
@@ -78,8 +79,8 @@
                     
                     
 
-           
                     
+                                        
                     <!-- Home Page Content -->
                     <div class="ah-content">
                         <div class="home-content">
@@ -769,21 +770,32 @@
             </section>
             <!-- End Portfolio Section -->            
             
-            
+<!--
+            <section class="home-section bg-light bg-pattern-over parallax-4" data-background="" id="home">
+                <div class="js-height-full" id="large-header">
+-->
             
             
             <!-- About Us Section -->
-            <section class="page-section bg-gray-lighter" id="about">
-                <div class="container relative">
+            <section class="page-section bg-pattern-over" id="about">
+                <div class="container " id="about">
+                    
+                    
+                    
+                    <!-- Video BG Init -->
+                    <div class="player" data-property="{videoURL:'https://youtu.be/_oSdyZ5tIHU',containment:'#about',autoPlay:true, showControls:true, showYTLogo: false, mute:true, startAt:0, opacity:1}">
+                    </div>
+                     <!-- End Video BG Init -->                    
+                    
                     
                     <!-- Section Headings -->
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
-                            <div class="section-title">
+                            <div class="section-title" id="philosophy-title">
                                 Philosophy<span class="st-point">.</span>
                             </div>
-                            <h2 class="section-heading">Values&nbsp;&amp;&nbsp;beliefs that drives me</h2>
-                            <div class="section-line mb-60 mb-xxs-30"></div>
+                            <h2 class="section-heading" id="philosophy-heading">Values&nbsp;&amp;&nbsp;beliefs that drives me</h2>
+                            <div class="section-line mb-60 mb-xxs-30" id="section-line-philosophy"></div>
                         </div>
                         
                     </div>
@@ -798,7 +810,7 @@
                             </li>
 -->
                             <li>
-                                <a href="#two" data-toggle="tab">Process</a>
+                                <a href="#two" data-toggle="tab">&nbsp;Process&nbsp;</a>
                             </li>
                             <li class="active">
                                 <a href="#three" data-toggle="tab">Philosophy</a>
@@ -867,7 +879,9 @@
                             </div>
                         </div>
                         <!-- End Skills -->
-                        <!-- Process -->
+                        
+                        
+                        <!-- PHILOSOPHY -->
                         <div class="tab-pane fade in active" id="three">
                             
                             <!-- Process Grid -->
@@ -879,11 +893,11 @@
                                         1
                                     </div>
                                     <div class="benefit-icon">
-                                        <span class="icon-trophy"></span>
+                                        <span class="icon-heart"></span>
                                     </div>
-                                    <h3 class="benefit-title">Ideas</h3>
+                                    <h3 class="benefit-title">Heart</h3>
                                     <div class="benefits-descr">
-                                        Donec pulvinar rutrum&nbsp;mi, sit amet viverra justo hendrerit eget.
+                                        Great product is made not </br/>only with hands but with heart. 
                                     </div>
                                 </div>
                                 <!-- End Process Item -->
@@ -894,11 +908,11 @@
                                         2
                                     </div>
                                     <div class="benefit-icon">
-                                        <span class="icon-bubbles"></span>
+                                        <span class="icon-bulb"></span>
                                     </div>
-                                    <h3 class="benefit-title">Discussion</h3>
+                                    <h3 class="benefit-title">Growth</h3>
                                     <div class="benefits-descr">
-                                        Mauris tincidunt augue interdum phasellus luctus commodo.
+                                        Admitting you were wrong is another<br/> way of saying you get wiser now. 
                                     </div>
                                 </div>
                                 <!-- End Process Item -->
@@ -913,7 +927,7 @@
                                     </div>
                                     <h3 class="benefit-title">Design</h3>
                                     <div class="benefits-descr">
-                                        Sed sed dictum nibh. Vivamus semper eros nec consequat. 
+                                       Good design is useful.<br/> Great design is pleasable.  
                                     </div>
                                 </div>
                                 <!-- End Process Item -->
@@ -926,70 +940,26 @@
                                     <div class="benefit-icon">
                                         <span class="icon-rocket"></span>
                                     </div>
-                                    <h3 class="benefit-title">Development</h3>
+                                    <h3 class="benefit-title">Build</h3>
                                     <div class="benefits-descr">
-                                        Suspendisse congue mi feugiat felis pretium pretium dapibus eu lacus.
+                                        Design not only for the users but <br/>also for the engineers who build it.
                                     </div>
                                 </div>
                                 <!-- End Process Item -->
                                 
-                                                                <!-- Process Item -->
-                                <div class="benefit-item">
-                                    <div class="benefit-number">
-                                        4
-                                    </div>
-                                    <div class="benefit-icon">
-                                        <span class="icon-rocket"></span>
-                                    </div>
-                                    <h3 class="benefit-title">Development</h3>
-                                    <div class="benefits-descr">
-                                        Suspendisse congue mi feugiat felis pretium pretium dapibus eu lacus.
-                                    </div>
-                                </div>
-                                <!-- End Process Item -->
-                                                                <!-- Process Item -->
-                                <div class="benefit-item">
-                                    <div class="benefit-number">
-                                        4
-                                    </div>
-                                    <div class="benefit-icon">
-                                        <span class="icon-rocket"></span>
-                                    </div>
-                                    <h3 class="benefit-title">Development</h3>
-                                    <div class="benefits-descr">
-                                        Suspendisse congue mi feugiat felis pretium pretium dapibus eu lacus.
-                                    </div>
-                                </div>
-                                <!-- End Process Item -->
-                                
-                                                                <!-- Process Item -->
-                                <div class="benefit-item">
-                                    <div class="benefit-number">
-                                        4
-                                    </div>
-                                    <div class="benefit-icon">
-                                        <span class="icon-rocket"></span>
-                                    </div>
-                                    <h3 class="benefit-title">Development</h3>
-                                    <div class="benefits-descr">
-                                        Suspendisse congue mi feugiat felis pretium pretium dapibus eu lacus.
-                                    </div>
-                                </div>
-                                <!-- End Process Item -->
-                                                                <!-- Process Item -->
-                                <div class="benefit-item">
-                                    <div class="benefit-number">
-                                        4
-                                    </div>
-                                    <div class="benefit-icon">
-                                        <span class="icon-rocket"></span>
-                                    </div>
-                                    <h3 class="benefit-title">Development</h3>
-                                    <div class="benefits-descr">
-                                        Suspendisse congue mi feugiat felis pretium pretium dapibus eu lacus.
-                                    </div>
-                                </div>
-                                <!-- End Process Item -->
+                                                              
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
                                 
                                 
                                 
@@ -1007,9 +977,11 @@
                     <!-- End Tab Content -->
                     
                     <!-- Devices Image -->
+<!--
                     <div class="section-bot-image animate-init slow-mo" data-anim-type="flip-in-bottom-front" data-anim-delay="0">
                         <img src="images/devices.png" alt="" />
                     </div>
+-->
                     <!-- End Devices Image -->
                     
                 </div>
@@ -1409,6 +1381,7 @@
 		<script src="js/animated-headers/EasePack.min.js"></script>
 		<script src="js/animated-headers/rAF.js"></script>
 		<script src="js/animated-headers/demo-3.js"></script>
+        <script type="text/javascript" src="js/jquery.mb.YTPlayer.js"></script>
         
     </body>
 </html>

@@ -1370,3 +1370,16 @@ function init_map(){
         }
     })(jQuery);
 }
+
+
+
+
+/*-----------------social buttons-----------------*/
+
+//$(document).ready(function() {
+//    $('.dc-morph-btns li').on('click', function() {
+//      $('.dc-morph-btns li').removeClass("selected");
+//      $(this).toggleClass("selected"); 
+//    });
+//
+//});

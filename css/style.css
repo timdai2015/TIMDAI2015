@@ -4881,6 +4881,199 @@ figcaption {
 }
 
 
+
+
+/* ==============================
+   DC Morph Btns - social following buttons
+   ============================== */
+
+/* #Demo Styles*/
+/*
+body {
+ background: rgba(237,237,235,0.7);
+ background-size: 163px;
+ font: 14px/21px Monaco, sans-serif;
+ color: #999;
+ font-smoothing: antialiased;
+ text-size-adjust: 100%;
+}
+a, a:visited{text-decoration:none;color:#FF805F}
+h4{margin:0;color:#333;}
+*/
+
+/* #DC Morph Buttons
+=======================*/
+.dc-morph-btns {
+    position: relative;
+    left:50%;
+    top:50%;
+    transform: translateX(-50%) translateY(-50%);
+	width:500px;
+    height:150px;
+	font-size: 1.4em; 
+	line-height: 0.9em; 
+	color: #444; 
+	text-align: center;
+    margin-top: 70px;
+}
+.dc-morph-btns li {  
+	position: relative;
+	width: 53px;
+	height: 50px;
+	display: inline-block;
+	margin-right: 5px;
+	overflow: visible;
+
+}
+.dc-morph-btns li a {
+	position: absolute;
+	left: 0;
+	top:0;
+	z-index: 1;
+/*	background: #fff;*/
+	border: 1px solid #ccc;
+	text-indent:0;
+	display:inline-block;
+	color:#888;
+	font-size:12px;
+	font-weight: 400;
+	text-decoration:none;
+	text-align:center;
+/*	text-transform: uppercase;*/
+	width: 53px;
+	height: 50px;
+	transition: all 600ms cubic-bezier(0.190,1.000,0.220,1.000);
+	box-sizing: content-box;
+    border-radius: 70px;
+	background-clip: padding-box;
+	transform: rotate(-45deg);
+}
+
+.dc-morph-btns li a:hover {
+	border: 1px solid rgba(255,224,11, 1);
+	background-clip: padding-box;
+	border-top-left-radius:2px;
+	border-top-right-radius:70px;
+	border-bottom-left-radius:70px;
+	border-bottom-right-radius:70px;
+	transform: rotate(-90deg);
+}
+
+.dc-morph-btns ul li i {
+	position: absolute;
+	width: 20px;
+	left:50%;
+	top:50%;
+	margin: -10px 0 0 -15px;
+	color: white;
+	font-size: 1em;
+	z-index: 2;
+	pointer-events: none;
+}
+
+.dc-morph-btns ul li span {
+	position: absolute;
+	width: 90px;
+	bottom: -30px;
+	left:-5px;
+	display: block;
+	color: white;
+	opacity:0;
+	font-size: 0.8em;
+	text-align: center;
+	transition: all 0.5s;
+}
+
+.dc-morph-btns ul li:hover span {
+	color: rgba(255,224,11, 1);
+	opacity:1;
+}
+
+
+
+
+/*
+.dc-morph-btns ul li.selected span {
+	color: #FF805F;
+	opacity:1;
+}
+
+
+.dc-morph-btns ul li.selected:hover span {
+	color: #FF805F;
+	opacity:1;
+}
+
+.dc-morph-btns li.selected a{  
+	border: 1px solid #FF805F;
+	background-clip: padding-box;
+	border-top-left-radius:40px;
+	border-top-right-radius:2px;
+	border-bottom-left-radius:40px;
+	border-bottom-right-radius:40px;
+	transform: rotate(-45deg);
+}
+
+.dc-morph-btns li.selected i{ 
+	color: #FF805F;
+}
+
+
+.dc-logo {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+}
+
+.dc-logo:hover svg{
+  transform-origin: 50% 50%;
+  animation: arrow-spin 2.5s 0s cubic-bezier(0.165, 0.840, 0.440, 1.000) 1;
+  }
+
+ .dc-logo:hover:before {
+  content:'\2764';
+  padding: 6px;
+  font: 10px/1 Monaco, sans-serif;
+  font-size:10px;
+  color: #00fffe;
+  text-transform:uppercase;
+  position: absolute;
+  left: -68px;
+  bottom: -30px;
+  white-space: nowrap;
+  z-index: 20px;
+  box-shadow: 0px 0px 4px #999;
+  background:#2a2e32;
+}
+.dc-logo:hover:after {
+  content:'Digital Craft';
+  padding: 6px;
+  font: 10px/1 Monaco, sans-serif;
+  font-size:10px;
+  color: #6E6F71;
+  text-transform:uppercase;
+  position: absolute;
+  right: 0;
+  bottom: -30px;
+  white-space: nowrap;
+  z-index: 20px;
+  box-shadow: 0px 0px 4px #999;
+  background:#fff;
+}
+
+@keyframes arrow-spin {
+  50% {
+    transform: rotateY(360deg);
+  }
+}
+*/
+
+
+
+
+
+
+
 /* ==============================
    Blog
    ============================== */

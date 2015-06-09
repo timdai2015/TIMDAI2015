@@ -3333,7 +3333,7 @@ a.logo:hover{
 	background-size: cover;
 }
 .features-icon{
-	font-size: 96px;
+	font-size: 48px;
 	line-height: 1.3;
 	color: rgba(255,255,255, .9);
 }
@@ -4155,15 +4155,17 @@ figcaption {
 	font-size: 18px;
 	font-style: normal;
 	letter-spacing: 0;
-	color: #444;
+	color: #FFF;
+    font-weight: 700;
 }
 .testimonial-author{
     margin-top: 20px;
-    color: #999;
+    color: #FFF;
     font-family: "Libre Baskerville", "Times New Roman", Times, serif;
 	font-size: 14px;
-	font-style: italic;
+	font-style: normal;
     text-align: center;
+    font-weight: 700;
 }
 
 /*
@@ -5473,7 +5475,8 @@ a.blog-item-more:hover{
 	width: 40px;
 	height: 60px;
 	line-height: 60px;
-	font-size: 74px;
+    /*  -------size of the two arrows------  */
+	font-size: 48px;
 	text-align: center;
 	color: rgba(255,255,255, .7);
 	
@@ -5570,7 +5573,8 @@ section:hover .item-carousel.owl-carousel .owl-next{
 	right: -80px;
 }
 .item-carousel .owl-pagination{
-	bottom: -95px;
+	bottom: -40px;
+    /*  orginal value is -95px  */
 }
 
 .work-full-slider:hover .owl-prev,

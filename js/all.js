@@ -683,13 +683,13 @@ function initPageSliders(){
         // Item carousel
         $(".item-carousel").owlCarousel({
             autoPlay: 5000,
-            //stopOnHover: true,
+            stopOnHover: true,
             items: 3,
             itemsDesktop: [1199, 3],
             itemsTabletSmall: [768, 3],
             itemsMobile: [480, 1],
-            navigation: false,
-            navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
+            navigation: true,
+            navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
         });
         
         // Item carousel

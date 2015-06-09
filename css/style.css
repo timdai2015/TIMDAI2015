@@ -4844,6 +4844,7 @@ figcaption {
     font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
+    margin-top:50px;
 }
 .footer-made .serif{
     font-size: 16px;
@@ -4852,7 +4853,7 @@ figcaption {
     text-transform: none;
 }
 .footer-social-links{
-    margin-top: 20px;
+    margin-top: 0px;
     font-size: 14px;
 }
 .footer-social-links a{

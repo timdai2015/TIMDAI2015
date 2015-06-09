@@ -538,15 +538,16 @@
     
         var tpl_tab_height;
         $(".tpl-minimal-tabs > li > a").click(function(){
-        
+                // to avoid pressing the button while the button is already in active or selected
             if (!($(this).parent("li").hasClass("active"))) {
                 tpl_tab_height = $(".tpl-minimal-tabs-cont > .tab-pane").filter($(this).attr("href")).height();
-                $(".tpl-minimal-tabs-cont").animate({
-                    height: tpl_tab_height
-                }, function(){
-                    $(".tpl-minimal-tabs-cont").css("height", "auto");
-                });
                 
+//                $(".tpl-minimal-tabs-cont").animate({
+//                    height: tpl_tab_height
+//                }, function(){
+//                    $(".tpl-minimal-tabs-cont").css("height", "auto");
+//                });
+//                
             }
             
         });

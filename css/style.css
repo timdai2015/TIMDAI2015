@@ -4844,8 +4844,14 @@ figcaption {
     font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
-    margin-top:0px;
+    margin-top:-100px;
+    margin-bottom: -50px;
 }
+
+#footer-heart{
+    color:red;
+}
+
 .footer-made .serif{
     font-size: 16px;
     font-weight: 400;
@@ -4880,6 +4886,12 @@ figcaption {
     border-color: rgba(255,255,255, .3);
 }
 
+#contact-me-header{
+
+    font-style:normal;
+    font-family: "Open Sans";
+    color:lightgrey;
+}
 
 
 
@@ -4905,7 +4917,7 @@ h4{margin:0;color:#333;}
 =======================*/
 .dc-morph-btns {
     position: relative;
-    left:50%;
+    left:48%;
     top:50%;
     transform: translateX(-50%) translateY(-50%);
 	width:500px;
@@ -4914,7 +4926,7 @@ h4{margin:0;color:#333;}
 	line-height: 0.9em; 
 	color: #444; 
 	text-align: center;
-    margin-top: 70px;
+    margin-top: 130px;
 }
 .dc-morph-btns li {  
 	position: relative;
@@ -4964,7 +4976,7 @@ h4{margin:0;color:#333;}
 	width: 20px;
 	left:50%;
 	top:50%;
-	margin: -10px 0 0 -15px;
+	margin: -5px 0 0 -10px;
 	color: white;
 	font-size: 1em;
 	z-index: 2;

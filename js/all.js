@@ -1374,12 +1374,17 @@ function init_map(){
 
 
 
-/*-----------------social buttons-----------------*/
+/*-----------------zeroclipboard-----------------*/
 
-//$(document).ready(function() {
-//    $('.dc-morph-btns li').on('click', function() {
-//      $('.dc-morph-btns li').removeClass("selected");
-//      $(this).toggleClass("selected"); 
-//    });
+//var client = new ZeroClipboard( document.getElementById("copy-button") );
 //
-//});
+//client.on( "ready", function( readyEvent ) {
+//   alert( "ZeroClipboard SWF is ready!" );
+//
+//  client.on( "aftercopy", function( event ) {
+//    // `this` === `client`
+//    // `event.target` === the element that was clicked
+//    event.target.style.display = "none";
+//    alert("Copied text to clipboard: " + event.data["text/plain"] );
+//  } );
+//} );

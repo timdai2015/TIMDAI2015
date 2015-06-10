@@ -4844,7 +4844,7 @@ figcaption {
     font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
-    margin-top:50px;
+    margin-top:0px;
 }
 .footer-made .serif{
     font-size: 16px;
@@ -4975,7 +4975,7 @@ h4{margin:0;color:#333;}
 	position: absolute;
 	width: 90px;
 	bottom: -30px;
-	left:-5px;
+	left:-10px;
 	display: block;
 	color: white;
 	opacity:0;
@@ -4990,7 +4990,26 @@ h4{margin:0;color:#333;}
 }
 
 
+#email-address span {
+    
+/*    color:rgba(132,211,230, 1);*/
+    
+}
 
+#email-address a {
+/*    border-color:rgba(132,211,230, 1);     */
+        
+}
+
+#email-address a:hover {
+/*    border-color:rgba(132,211,230, 1);     */
+        
+}
+
+#email-address i{
+    color: rgba(255,224,11, 1);  
+        
+}
 
 /*
 .dc-morph-btns ul li.selected span {

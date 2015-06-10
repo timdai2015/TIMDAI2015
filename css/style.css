@@ -4844,7 +4844,7 @@ figcaption {
     font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
-    margin-top:-100px;
+    margin-top:-130px;
     margin-bottom: -50px;
 }
 
@@ -4930,7 +4930,7 @@ h4{margin:0;color:#333;}
 }
 .dc-morph-btns li {  
 	position: relative;
-	width: 53px;
+	width: 40px;
 	height: 50px;
 	display: inline-block;
 	margin-right: 5px;
@@ -4952,8 +4952,8 @@ h4{margin:0;color:#333;}
 	text-decoration:none;
 	text-align:center;
 /*	text-transform: uppercase;*/
-	width: 53px;
-	height: 50px;
+	width: 43px;
+	height: 40px;
 	transition: all 600ms cubic-bezier(0.190,1.000,0.220,1.000);
 	box-sizing: content-box;
     border-radius: 70px;
@@ -4976,7 +4976,7 @@ h4{margin:0;color:#333;}
 	width: 20px;
 	left:50%;
 	top:50%;
-	margin: -5px 0 0 -10px;
+	margin: -10px 0 0 -7px;
 	color: white;
 	font-size: 1em;
 	z-index: 2;

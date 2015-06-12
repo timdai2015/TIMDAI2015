@@ -56,6 +56,7 @@ svg {
 }
 */
 
+/*------hack/ put an image while the one is loading-----*/
 
 .image-screen {
 	position: absolute;
@@ -63,7 +64,9 @@ svg {
 	left: 50%;
 	max-height: 100%;
 	max-width: 100%;
-	opacity: 0.5;
+	opacity: 1;
+    filter: grayscale(1); /* Firefox 35+ */
+    -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
 	-webkit-transform: translateX(-50%) translateY(-50%);
 	transform: translateX(-50%) translateY(-50%);
 }

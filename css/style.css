@@ -576,8 +576,8 @@ a.btn-mod:focus{
 }
 
 .btn-mod.btn-border{
-  	color: #151515;
-	border: 2px solid #151515;
+  	color: grey;
+	border: 2px solid grey;
   	background: transparent;
 }
 .btn-mod.btn-border:hover,
@@ -6319,6 +6319,7 @@ section:hover .small-item-carousel .owl-next{
 
 .intro-image{
     width:100%;
+/*    padding: 30px 30px;*/
 }
 .intro-label{
     position: absolute;
@@ -6326,6 +6327,20 @@ section:hover .small-item-carousel .owl-next{
     right:10%;
     font-size: 17px;
 }
+
+
+
+/* ==============================
+   Books
+   ============================== */
+
+.book-info {
+    
+    margin-top:20px;
+}
+
+
+
 
 
 /* ==============================

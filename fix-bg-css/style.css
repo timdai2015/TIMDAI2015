@@ -87,7 +87,10 @@ Main Components
   background-position: center center;
 }
 .cd-fixed-background h2, .cd-fixed-background p {
-  color: #f2e6cd;
+    
+/*color of the text or paragraph*/
+  color: black;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -167,6 +170,10 @@ Main Components
   .cd-fixed-background .cd-content::after {
     display: none !important;
   }
+    
+  .cd-fixed-background.img-0 {
+    background-image: url("../fix-bg-img/img-0.png");
+  }    
   .cd-fixed-background.img-1 {
     background-image: url("../fix-bg-img/img-1.jpg");
   }

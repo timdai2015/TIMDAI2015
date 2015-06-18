@@ -6399,3 +6399,128 @@ section:hover .small-item-carousel .owl-next{
 	.multi-columns-row .col-lg-2:nth-child(6n + 7) { clear: left; }
 	.multi-columns-row .col-lg-1:nth-child(12n + 13) { clear: left; }
 }
+
+
+
+/* ==============================
+   parallax background
+   ============================== */
+
+		/* Parallax background */
+
+
+.under-wrap {
+	position:absolute;
+	width:100%;
+	height:100%;
+	}	
+.under-wrap .pattern {
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	z-index:88;
+	opacity:.5;
+	background:url(../images/pattern-bg-3.png);
+	}
+
+		.under-wrap.parallax-bg {
+            overflow:hidden;
+			height:100%;
+			width:100%;
+			}
+
+        .under-wrap.parallax-bg .main-bg {
+                background:url(../images/placeholders/5.jpg);
+				background-size:cover;
+				opacity:1;
+				width:100%;
+				height:100%;
+				position:absolute;
+				top:0;
+				left:0;
+				z-index:-2;
+				}        
+
+
+
+/* Parallax background */
+		.under-wrap.parallax-bg {
+			overflow:hidden;
+			height:100%;
+			width:100%;
+			}
+			
+			@keyframes lighthouse {
+				0% {
+					transform: rotateZ(0deg) translate3d(0px, 20%, 0px) rotateZ(0deg);
+				}
+				100% {
+					transform: rotateZ(360deg) translate3d(0px, 20%, 0px) rotateZ(-360deg);
+				}
+			}
+
+			@-moz-keyframes lighthouse {
+				0% {
+					transform: rotateZ(0deg) translate3d(0px, 20%, 0px) rotateZ(0deg);
+				}
+				100% {
+					transform: rotateZ(360deg) translate3d(0px, 20%, 0px) rotateZ(-360deg);
+				}
+			}
+	
+			@-webkit-keyframes lighthouse {
+				0% {
+					transform: rotateZ(0deg) translate3d(0px, 20%, 0px) rotateZ(0deg);
+				}
+				100% {
+					transform: rotateZ(360deg) translate3d(0px, 20%, 0px) rotateZ(-360deg);
+				}
+			}
+			
+			#parallax-content {
+				width: 100%;
+				height:100%;
+				position:absolute;
+				margin: 0 auto;
+				padding: 0;
+				z-index:-1;
+			}
+			.under-wrap.parallax-bg .main-bg {
+				background:url(../images/placeholders/5.jpg);
+				background-size:cover;
+				opacity:1;
+				width:100%;
+				height:100%;
+				position:absolute;
+				top:0;
+				left:0;
+				z-index:-2;
+				}
+			.lighthouse {
+				background:url(http://noisacco.fr/future-tf/assets/img/midground.png) repeat ;
+				animation: 20s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.1s none infinite lighthouse;
+				position: absolute;
+				transform-origin: 50% 90% 0;
+				width:100%;
+				height:100%
+			}
+			
+			.layer:nth-child(1) {
+				opacity:.3;
+				background:url(../images/placeholders/5.jpg);
+				background-size:cover;
+				position:absolute
+			}
+			
+			.layer:nth-child(2) {
+				opacity: 0.30;
+			}
+			
+			.layer:nth-child(3) {
+				opacity: 0.45;
+				background:url(http://noisacco.fr/future-tf/assets/img/foreground.png) repeat 90% 110%;
+			}
+
+	

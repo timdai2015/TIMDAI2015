@@ -36,6 +36,8 @@ a:hover, a:focus {
 .demo-drawings body {
 	background: rgb(96, 212, 240);
     background: rgba(255,224,11, 1);
+    background: rgba(255,210,11, 1);
+
 /*
     background: rgba(78,192,175, 1);
     background: rgba(132,211,230, 1);
@@ -75,8 +77,8 @@ a:hover, a:focus {
 .codrops-header {
 	position: relative;
 	margin: 0 auto;
-	padding: 40px 5px;
-	text-align: center;
+	padding: 5px 5px;
+	text-align: right;
 }
 
 .demo-drawings .codrops-header {
@@ -84,7 +86,7 @@ a:hover, a:focus {
 }
 
 .demo-drawings .codrops-header {
-	background: #F26663;
+/*	background: #F26663;*/
 }
 
 .codrops-header h1 {
@@ -186,7 +188,7 @@ a:hover, a:focus {
 
 .demo-drawings .codrops-demos a:hover,
 .demo-drawings .codrops-demos a.current-demo {
-	opacity: 0.6;
+	opacity: 0.9;
 	background: transparent;
 }
 
@@ -220,3 +222,115 @@ a:hover, a:focus {
 	}
 
 }
+
+
+
+
+
+
+/*------------Added by me-------------*/
+
+
+.futureshop-header {
+
+    position: absolute; 
+    top:300px; 
+    right:65%; 
+    width:27%; 
+    font-size:24px;
+
+}
+
+.futureshop-header h1 {
+
+    margin-bottom:0px;
+
+}
+
+.futureshop-header img {
+
+    position: absolute;
+}
+
+
+.mac {
+
+    margin-top:0px; 
+    left:12%;
+}
+
+
+/*h2 for futureshop*/
+.futureshop-header2 {
+
+    margin-top:100px; 
+    margin-bottom:0px;
+
+}
+
+#first-header {
+    margin-top:170px; 
+    margin-bottom:100px;
+}
+
+#futureshop-link {
+
+    color:white;
+    text-decoration: underline;
+    font-size: 22px;
+    font-weight: 300;
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+
+}
+#futureshop-link:hover {
+
+    color:red;
+
+
+}
+
+
+.futureshop-header2 ul {
+    text-align: left; 
+    font-size:19px; 
+    margin-top:40px;
+
+}
+.futureshop-header2 li {
+
+    margin-top:7px;
+}
+
+#view-demo {
+
+    color:red; 
+    border: solid 2px red; 
+    padding:7px 37px;
+    margin-top:100px;
+    margin-bottom: 100px;
+    font-weight: 400;
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+    font-size:18px;
+}
+
+#view-demo:hover, #view-demo:focus{
+
+    
+    color:white; 
+    border: solid 2px white; 
+
+}
+
+.img-info {
+
+    font-size: 14px;
+
+}
+
+h3 {
+    font-weight: 300;
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    font-size: 24px;
+
+}
+

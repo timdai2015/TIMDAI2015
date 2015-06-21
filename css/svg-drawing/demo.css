@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700italic,700,300,800,400);
 @font-face {
 	font-weight: normal;
 	font-style: normal;
@@ -16,7 +17,7 @@ body {
 	background: #f9f9f9;
 	color: #6c6e6f;
 	font-weight: 300;
-	font-family: 'Lato', Calibri, Arial, sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	overflow-y: scroll;
 	overflow-x: hidden;
 	font-size: 100%;
@@ -38,13 +39,10 @@ a:hover, a:focus {
     background: rgba(255,224,11, 1);
     background: rgba(255,210,11, 1);
 
-/*
-    background: rgba(78,192,175, 1);
-    background: rgba(132,211,230, 1);
-*/
 ;   
+/*-----Font Color-----*/
+	color: white;
     
-	color: #fff;
 }
 
 .demo-drawings a {
@@ -71,8 +69,7 @@ a:hover, a:focus {
 
 .codrops-header,
 .codrops-top {
-	font-family: 'Lato', Arial, sans-serif;
-}
+    font-family: 'Open Sans', sans-serif;}
 
 .codrops-header {
 	position: relative;
@@ -175,14 +172,14 @@ a:hover, a:focus {
 	display: inline-block;
 	font-weight: 400;
 	font-size: 90%;
-	margin: 0 4px;
+	margin: 0 0px;
 	background: #237dac;
 	color: #fff;
 }
 
 .demo-drawings .codrops-demos a {
-	border: 2px solid #fff;
-	color: #fff;
+	border: 2px solid rgba(0,0,0,0.5);
+	color: rgba(0,0,0,0.5);
 	background: transparent;
 }
 
@@ -198,31 +195,6 @@ a:hover, a:focus {
 }
 
 
-@media screen and (max-width: 46.0625em) {
-
-	.codrops-header {
-		margin-bottom: 0;
-		padding-bottom: 1em;
-	}
-
-}
-
-@media screen and (max-width: 25em) {
-
-	.demo-drawings .codrops-header {
-		font-size: 80%;
-	}
-
-	.codrops-top {
-		font-size: 120%;
-	}
-
-	.codrops-icon span {
-		display: none;
-	}
-
-}
-
 
 
 
@@ -234,10 +206,10 @@ a:hover, a:focus {
 .futureshop-header {
 
     position: absolute; 
-    top:300px; 
-    right:65%; 
+    top:330px; 
+    right:60%; 
     width:27%; 
-    font-size:24px;
+    font-size:21px;
 
 }
 
@@ -256,7 +228,7 @@ a:hover, a:focus {
 .mac {
 
     margin-top:0px; 
-    left:12%;
+    left:17%;
 }
 
 
@@ -276,15 +248,15 @@ a:hover, a:focus {
 #futureshop-link {
 
     color:white;
-    text-decoration: underline;
-    font-size: 22px;
+    text-decoration:underline;
+    font-size: 20px;
     font-weight: 300;
-	font-family: 'Lato', Calibri, Arial, sans-serif;
-
+    font-family: 'Open Sans', sans-serif;
 }
 #futureshop-link:hover {
 
-    color:red;
+    color:rgba(237,12,104,1);
+
 
 
 }
@@ -292,7 +264,7 @@ a:hover, a:focus {
 
 .futureshop-header2 ul {
     text-align: left; 
-    font-size:19px; 
+    font-size:1.1em; 
     margin-top:40px;
 
 }
@@ -309,15 +281,16 @@ a:hover, a:focus {
     margin-top:100px;
     margin-bottom: 100px;
     font-weight: 400;
-	font-family: 'Lato', Calibri, Arial, sans-serif;
-    font-size:18px;
+    font-family: 'Open Sans', sans-serif;    
+    font-size:1.2em;
 }
 
 #view-demo:hover, #view-demo:focus{
 
     
     color:white; 
-    border: solid 2px white; 
+    border: solid 2px red;
+    background:rgba(254,110,76,0.2);
 
 }
 
@@ -329,8 +302,155 @@ a:hover, a:focus {
 
 h3 {
     font-weight: 300;
-    font-family: 'Lato', Calibri, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;    
     font-size: 24px;
 
 }
 
+
+
+
+
+
+
+/*-----------------responsive design -------------*/
+
+
+@media screen and (max-width: 70em) {
+
+    
+/*
+    .demo-drawings body {
+	background:green;
+
+}
+*/
+    .mac {
+
+    left:0 !important;
+}
+    
+
+    .futureshop-header {
+
+    position: relative; 
+    top:700px; 
+    left:50%;
+    width:400px; 
+    font-size:22px;
+    margin-left: -150px;
+
+
+}    
+    .codrops-header {
+
+	text-align: center;
+}
+
+    #first-header {
+    margin-top:220px; 
+    margin-bottom:100px;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 46.0625em) {
+
+	.codrops-header {
+		margin-bottom: 0;
+		padding-bottom: 1em;
+	}
+    
+    
+    .demo-drawings body {
+/*	background: rgb(96, 212, 240);*/
+
+}
+    
+    .futureshop-header {
+
+    top:450px; 
+
+}    
+    .futureshop-header2 ul {
+    margin-top:0px;
+
+}
+    .drawings {
+    
+    margin-top:-150px !important;
+    margin-bottom:-100px;
+    
+    }
+
+    
+}
+
+}
+
+/*
+@media screen and (max-width: 25em) {
+
+	.demo-drawings .codrops-header {
+		font-size: 80%;
+	}
+
+	.codrops-top {
+		font-size: 120%;
+	}
+
+	.codrops-icon span {
+		display: none;
+	}
+
+    
+        .demo-drawings body {
+	background: rgb(96, 12, 240);
+
+
+    
+}
+*/
+
+
+
+.moving-arrow img {
+	display:block;
+	margin-top: -70px;
+	margin-left:auto;
+	margin-right:auto;	
+	
+	position:relative;
+	animation:mymove 1s;
+	animation-iteration-count:5;
+
+/* Safari and Chrome */
+	-webkit-animation:mymove 1s;
+	-webkit-animation-iteration-count:5;	
+}
+
+@keyframes mymove
+{
+	0% {top:0px;}
+	25% {top:0px;}
+	50% {top:0px;}
+	75% {top:5px;}
+	100% {top:0px;}
+}
+
+@-webkit-keyframes mymove /* Safari and Chrome */
+{
+	0% {top:0px;}
+	25% {top:0px;}
+	50% {top:0px;}
+	75% {top:5px;}
+	100% {top:0px;}
+}
+
+#nav-bottom {
+    margin-top:100px;
+    text-align: center!important;
+}

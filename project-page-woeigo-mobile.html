@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>BigStream &mdash; One Page Parallax Theme</title>
+        <title>Woeigo-mobile</title>
         <meta name="description" content="">
         <meta name="keywords" content="">
         <meta charset="utf-8">
@@ -258,7 +258,36 @@
             </section>
             <!-- End Content Section -->   
             
+            
+            
 
+            
+            
+           <br/>
+           <br/>
+           <br/>
+           <br/>
+           <br/>
+                            
+            <!--  Image magnifier also need to include the JS, No need extra CSS. CSS is already in the style.css-->
+            <div class="magnify">
+
+                <!-- This is the magnifying glass which will contain the original/large version -->
+                <div class="large"></div>
+
+                <!-- This is the small image -->
+                <img class="small" src="http://thecodeplayer.com/uploads/media/iphone.jpg" width="300"/>
+
+            </div>            
+            
+            <!-- End of image magnifier -->                   
+            
+
+            
+            
+            
+            
+            
             
             <!-- Services Section -->
             <section class="split-section bg-scroll bg-dark-alfa-50" data-background="images/full-width-images/section-bg-1.jpg" id="services">
@@ -658,8 +687,10 @@
             var scene = document.getElementById('parallax-content');
             var parallax = new Parallax(scene);
         </script>      
-    
-    
-    
+
+        <!--Retina /magnifying glass effect-->
+        <script type="text/javascript" src="js/mag-glass.js"></script>
+        
+        
     </body>
 </html>

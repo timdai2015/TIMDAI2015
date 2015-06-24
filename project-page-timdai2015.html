@@ -29,7 +29,8 @@
         
         
         <!--   Image Compare Slide     -->
-        <script src="js/modernizr.js"></script> <!-- Modernizr -->
+        <!-- Modernizr -->
+        <script src="js/modernizr.js"></script> 
         
         
         
@@ -552,9 +553,24 @@
                             <div class="col-md-7 col-lg-offset-1">
                                 
                                 <!-- Image -->
+<!--
                                 <div class="work-full-media mt-0">
                                     <img src="images/portfolio/mockup-tim.png" alt="" />
                                 </div>
+-->
+                                
+                         <!--            Image Compare Slide            -->       
+                        <figure class="cd-image-container">
+                            <img src="images/slider/img-0.png" alt="Original Image">
+                            <span class="cd-image-label" data-type="original">Wireframe</span>
+
+                            <div class="cd-resize-img"> <!-- the resizable image on top -->
+                                <img src="images/slider/img-1.jpg" alt="Modified Image">
+                                <span class="cd-image-label" data-type="modified">Mockup</span>
+                            </div>
+
+                            <span class="cd-handle"></span>
+                        </figure> <!-- cd-image-container -->                                   
                                 <!-- End Image -->
                                 
                             </div>
@@ -563,17 +579,21 @@
                         
 <!--            Image Compare Slide            -->
                         
+<!--
                         <figure class="cd-image-container">
                             <img src="images/slider/img-0.png" alt="Original Image">
-                            <span class="cd-image-label" data-type="original">Original</span>
+                            <span class="cd-image-label" data-type="original">Wireframe</span>
 
-                            <div class="cd-resize-img"> <!-- the resizable image on top -->
+                            <div class="cd-resize-img"> 
                                 <img src="images/slider/img-1.jpg" alt="Modified Image">
-                                <span class="cd-image-label" data-type="modified">Modified</span>
+                                <span class="cd-image-label" data-type="modified">Mockup</span>
                             </div>
 
                             <span class="cd-handle"></span>
-                        </figure> <!-- cd-image-container -->                        
+                        </figure> 
+-->
+                        
+                <!-- cd-image-container -->                        
                         
                         
                         
@@ -622,10 +642,24 @@
                 </section>
                 <!-- End Slide Item -->
                 
+
+                
             </div>
             <!-- End Fullwidth Slider -->
             
             
+
+            <!-- Lets make a simple image magnifier -->
+            <div class="magnify">
+
+                <!-- This is the magnifying glass which will contain the original/large version -->
+                <div class="large"></div>
+
+                <!-- This is the small image -->
+                <img class="small" src="http://thecodeplayer.com/uploads/media/iphone.jpg" width="300"/>
+
+            </div>            
+
             <!-- Portfolio Section -->
 
             
@@ -906,14 +940,14 @@
         
         
         <!--   Image Compare Slide     -->
-        
-<!--
-        <script src="js/jquery-2.1.1.js"></script>
-        <script src="js/jquery.mobile.custom.min.js"></script> 
--->
         <script src="js/main.js"></script> <!-- Resource jQuery -->
         
+        <!--Retina /magnifying glass effect-->
+        <script type="text/javascript" src="js/mag-glass.js"></script>
+
         
+        
+ 
         
     </body>
 </html>

@@ -44,7 +44,7 @@ Main Components
   position: relative;
   height: 100%;
   background-color: white;
-  background-image: url("../fix-bg-img/header.png");
+  background-image: url("../fix-bg-img/header-s2.jpg");
     
   position: relative;
   padding: 3em 5% 0;
@@ -56,14 +56,14 @@ Main Components
 }
 .cd-header h1 {
   width: 90%;
-  color: #f2e6cd;
-  text-align: center;
-  font-size: 2.2rem;
+  color: white;
+  text-align: left;
+  font-size: 3rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 45%;
   bottom: auto;
   right: auto;
   -webkit-transform: translateX(-50%) translateY(-50%);
@@ -72,6 +72,33 @@ Main Components
   -o-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
 }
+
+.cd-header p {
+  width: 30%;
+  color: white;
+  text-align: left;
+  font-size: 2rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: absolute;
+  left: 20%;
+  top: 55%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+
+
+
+
+
+
+
 @media only screen and (min-width: 768px) {
   .cd-header h1 {
     font-size: 3.6rem;

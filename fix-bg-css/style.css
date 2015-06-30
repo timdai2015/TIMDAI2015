@@ -240,6 +240,9 @@ Main Components
   background: url("../fix-bg-img/img-mobile-4.jpg") no-repeat;
   background-size: 100% auto;
 }
+
+
+/*----------when the screen size is bigger than 768px-----------*/
 @media only screen and (min-width: 768px) {
   .cd-fixed-background {
     height: 100%;
@@ -284,6 +287,31 @@ Main Components
   .cd-fixed-background.img-4 {
     background-image: url("../fix-bg-img/img-4.jpg");
   }
+    
+    
+/*------------retina / mag glass tip ------------*/
+/*------------when is bigger than 768px  ------------*/
+
+.retina-glass-tip {
+
+    position:absolute; 
+    right:62%; 
+    top:344px; 
+    width:auto;
+}
+
+.retina-glass-tip-2 {
+
+    position:absolute; 
+    left:63%; 
+    top:344px; 
+    width:auto;
+
+}    
+    
+    
+    
+    
 }
 
 
@@ -350,3 +378,60 @@ Main Components
 .no-js .cd-vertical-nav {
   display: none;
 }
+
+
+/*------------retina / mag glass tip ------------*/
+/*------------when is bigger than 768px - responsive ------------*/
+
+@media only screen and (max-width: 768px) {
+    
+    
+.retina-glass-tip {
+
+    position:absolute; 
+    right:62%; 
+    top:344px; 
+    width:auto;
+    visibility: hidden;
+
+}
+
+.retina-glass-tip-2 {
+
+    position:absolute; 
+    left:63%; 
+    top:344px; 
+    width:auto;
+    visibility: hidden;
+
+}
+    
+    
+}
+
+/*------------when is bigger than 1050px - responsive  ------------*/
+
+@media only screen and (max-width: 1050px) {
+    
+    
+.retina-glass-tip {
+
+    position:absolute; 
+    right:70%; 
+    top:344px; 
+    width:auto;
+
+}
+
+.retina-glass-tip-2 {
+
+    position:absolute; 
+    left:70%; 
+    top:344px; 
+    width:auto;
+
+}
+    
+    
+}
+

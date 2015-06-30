@@ -182,6 +182,7 @@ Main Components
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+    
 }
 .cd-fixed-background h2, .cd-fixed-background p {
     
@@ -197,7 +198,7 @@ Main Components
 }
 .cd-fixed-background p {
   line-height: 1.6;
-  font-family: "Merriweather", serif;
+  font-family: "Open Sans", sans-serif;
 }
 .cd-fixed-background .light-background h2, .cd-fixed-background .light-background p {
   color: #0f594d;

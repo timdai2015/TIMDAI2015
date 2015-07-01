@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>WOEIGO</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Google Web Font -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,600,300,200&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+    <!-- Add custom CSS here -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/woeigo.css" rel="stylesheet">
+    
+    <!-- profile -->
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+<div class="page-wrap">
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand logo-icon" href="#"><img src="img/logo.png"></a>
+            </div>
+            
+            
+            
+             <!----------------------The Search Bar--------------------------->
+    
+            <div class="col-sm-5 col-sm-offset-2 col-xs-12 col-xs-offset-0 search-div">
+            <div class="input-group">
+ 
+                <div class="input-group-btn search-panel">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    	<span id="search_concept"></span> <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#contains">Environmental</a></li>
+                      <li><a href="#its_equal">Humanitarian</a></li>
+                      <li><a href="#greather_than">Animal Welfare</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#all">More+</a></li>
+                    </ul>
+                </div>
+                <input type="hidden" name="search_param" value="all" id="search_param">         
+                <input type="text" class="form-control" name="x" placeholder="Search Causes...">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                </span>
+            </div>
+            </div>
+            
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                	 <!--<li><a href="#">Sign Up</a>
+                    </li>
+                    <li><a href="#">Log In</a>
+                    </li>-->
+					
+                    
+                <li><a href="#"><span class="glyphicon glyphicon-plus"></span> Project</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-globe"></span> Explore</a></li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-bell fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-comment fa-fw"></i> New Comment
+                                    <span class="pull-right text-muted small"></span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                    <span class="pull-right text-muted small"></span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-envelope fa-fw"></i> Message Sent
+                                    <span class="pull-right text-muted small"></span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-tasks fa-fw"></i> New Task
+                                    <span class="pull-right text-muted small"></span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                                    <span class="pull-right text-muted small"></span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="#">
+                                <strong>See All Alerts</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-alerts -->
+                </li>
+                    
+                    
+                    
+                    <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                	</li>
+	
+
+                </ul>
+                
+                
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+
+
+<!--------------------------------------------Preview/Search Results---------------------------------------------------->
+
+<div class="project-view">
+	<div class="container">
+	<div class="row">
+		<h3 class="text-center">Results </h3>
+        <hr/>
+	</div>
+    <div class="row">
+    
+    <!-----------One Info Card---------------->
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <h4> 
+                    <span class="label label-info info">
+                        <span data-toggle="tooltip" title="Viewed"><b class="glyphicon glyphicon-eye-open"></b> 1k </span>
+                        <span data-toggle="tooltip" title="Liked"><b class="fa fa-heart"></b> 209</span>
+                        <span data-toggle="tooltip" title="Comments"><b class="fa fa-comment"></b> 46</span>
+                    </span>
+                </h4>
+                <div class="post">
+                <div class="post-img-content">
+                    <img src="img/animal.png" class="img-responsive" />
+                    <span class="post-title"><b>Stop illegal ivory sales      </b><br/>
+                        <b> By WWF</b></span>
+                </div>
+                </div>
+                
+                <div class="panel-body">
+                   <div class="progress">
+                      <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                  			<span class="sr-only">70% Complete</span>
+                   	</div>
+                  		<span class="progress-type">$15,629 Funded</span>
+                   	<span class="progress-completed">70%</span>
+                   </div>
+                  
+                  
+                  <div class="card-info">
+                  <!--<h5><i class="fa fa-university"></i><strong> Organization: </strong> World Wide Fund for Nature</h5>-->
+                  
+                      <div class="time-space">
+                          <div class="pull-left">
+                              <h6><i class="fa fa-clock-o"s></i><strong> </strong> 90 days left </h6>
+                         </div>
+                         <div class="pull-right">
+                              <h6><i class="fa fa-map-marker"></i><strong> </strong> Vancouver, Canada </h6>
+                         </div>
+                      </div>
+</br>
+  
+                      <div class="project-description">
+                          <p>If any elephants are to survive, all ivory trade must stop, concludes a new study examining the viability of regulated trade...</p>
+                     </div>
+                 
+                  </div>
+                  
+               </div>
+                
+                <a href="#" class="btn btn-info col-xs-12" role="button">View Project</a>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        
+        
+        
+        
+        
+    <!----------- Duplicated One Info Card---------------->
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <h4> 
+                    <span class="label label-info info">
+                        <span data-toggle="tooltip" title="Viewed"><b class="glyphicon glyphicon-eye-open"></b> 2,1 k </span>
+                        <span data-toggle="tooltip" title="Liked"><b class="fa fa-heart"></b> 403</span>
+                        <span data-toggle="tooltip" title="Comments"><b class="fa fa-comment"></b> 143</span>
+                    </span>
+                </h4>
+                <div class="post">
+                <div class="post-img-content">
+                    <img src="img/environment.png" class="img-responsive" />
+                    <span class="post-title"><b>Cleaner planet </b><br/>
+                        <b> By Happy Planet</b></span>
+                </div>
+                </div>
+                
+                <div class="panel-body">
+                   <div class="progress">
+                      <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 30%;">
+                  			<span class="sr-only">30% Complete</span>
+                   	</div>
+                  		<span class="progress-type">$87,537 Funded</span>
+                   	<span class="progress-completed">30%</span>
+                   </div>
+                  
+                  
+                  <div class="card-info">
+                  <!--<h5><i class="fa fa-university"></i><strong> Organization: </strong> World Wide Fund for Nature</h5>-->
+                  
+                      <div class="time-space">
+                          <div class="pull-left">
+                              <h6><i class="fa fa-clock-o"s></i><strong> </strong> 120 days left </h6>
+                         </div>
+                         <div class="pull-right">
+                              <h6><i class="fa fa-map-marker"></i><strong> </strong> Beijing, China </h6>
+                         </div>
+                      </div>
+</br>
+  
+                      <div class="project-description"> 
+                          <p>Air pollution is the introduction of particulates, biological molecules, or other harmful materials into the Earth's atmosphere.</p><!-------Brent, limit the max number of characters to 150 to keep everything looks properly----------------->
+                     </div>
+                 
+                  </div>
+                  
+               </div>
+                
+                <a href="#" class="btn btn-info col-xs-12" role="button">View Project</a>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+
+
+
+    <!-----------One Info Card---------------->
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <h4> 
+                    <span class="label label-info info">
+                        <span data-toggle="tooltip" title="Viewed"><b class="glyphicon glyphicon-eye-open"></b> 357 </span>
+                        <span data-toggle="tooltip" title="Liked"><b class="fa fa-heart"></b> 33</span>
+                        <span data-toggle="tooltip" title="Comments"><b class="fa fa-comment"></b> 32</span>
+                    </span>
+                </h4>
+                <div class="post">
+                <div class="post-img-content">
+                    <img src="img/human.png" class="img-responsive" />
+                    <span class="post-title"><b>Education is for everything       </b><br/>
+                        <b> By One World</b></span>
+                </div>
+                </div>
+                
+                <div class="panel-body">
+                   <div class="progress">
+                      <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+                  			<span class="sr-only">50% Complete</span>
+                   	</div>
+                  		<span class="progress-type">$25,629 Funded</span>
+                   	<span class="progress-completed">50%</span>
+                   </div>
+                  
+                  
+                  <div class="card-info">
+                  <!--<h5><i class="fa fa-university"></i><strong> Organization: </strong> World Wide Fund for Nature</h5>-->
+                  
+                      <div class="time-space">
+                          <div class="pull-left">
+                              <h6><i class="fa fa-clock-o"s></i><strong> </strong> 40 days left </h6>
+                         </div>
+                         <div class="pull-right">
+                              <h6><i class="fa fa-map-marker"></i><strong> </strong> Cape town, South Africa </h6>
+                         </div>
+                      </div>
+</br>
+  
+                      <div class="project-description">
+                          <p>Throughout the developing world, going to school is rarely free. Students are required to pay their own transportation costs, purchase uniforms, textbooks, notebooks and pencils.</p>
+                     </div>
+                 
+                  </div>
+                  
+               </div>
+                
+                <a href="#" class="btn btn-info col-xs-12" role="button">View Project</a>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+
+    <!-----------One Info Card---------------->
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <h4> 
+                    <span class="label label-info info">
+                        <span data-toggle="tooltip" title="Viewed"><b class="glyphicon glyphicon-eye-open"></b> 257 </span>
+                        <span data-toggle="tooltip" title="Liked"><b class="fa fa-heart"></b> 3</span>
+                        <span data-toggle="tooltip" title="Comments"><b class="fa fa-comment"></b> 17</span>
+                    </span>
+                </h4>
+                <div class="post">
+                <div class="post-img-content">
+                    <img src="img/vege.png" class="img-responsive" />
+                    <span class="post-title"><b>Vegetarian for beginner</b><br/>
+                        <b> By Vegetarian Power</b></span>
+                </div>
+                </div>
+                
+                <div class="panel-body">
+                   <div class="progress">
+                      <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 10%;">
+                  			<span class="sr-only">10% Complete</span>
+                   	</div>
+                  		<span class="progress-type">$1,358 Funded</span>
+                   	<span class="progress-completed">10%</span>
+                   </div>
+                  
+                  
+                  <div class="card-info">
+                  <!--<h5><i class="fa fa-university"></i><strong> Organization: </strong> World Wide Fund for Nature</h5>-->
+                  
+                      <div class="time-space">
+                          <div class="pull-left">
+                              <h6><i class="fa fa-clock-o"s></i><strong> </strong> 60 days left </h6>
+                         </div>
+                         <div class="pull-right">
+                              <h6><i class="fa fa-map-marker"></i><strong> </strong> Seattle, United States </h6>
+                         </div>
+                      </div>
+</br>
+  
+                      <div class="project-description">
+                          <p>According to the U.S. National Library of Medicine, a vegetarian diet “focuses on plants for food.”</p>
+                     </div>
+                 
+                  </div>
+                  
+               </div>
+                
+                <a href="#" class="btn btn-info col-xs-12" role="button">View Project</a>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+
+    <!-----------One Info Card---------------->
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <h4> 
+                    <span class="label label-info info">
+                        <span data-toggle="tooltip" title="Viewed"><b class="glyphicon glyphicon-eye-open"></b> 257 </span>
+                        <span data-toggle="tooltip" title="Liked"><b class="fa fa-heart"></b> 3</span>
+                        <span data-toggle="tooltip" title="Comments"><b class="fa fa-comment"></b> 17</span>
+                    </span>
+                </h4>
+                <div class="post">
+                <div class="post-img-content">
+                    <img src="img/text.png" class="img-responsive" />
+                    <span class="post-title"><b>End text and drive</b><br/>
+                        <b> By ICBC</b></span>
+                </div>
+                </div>
+                
+                <div class="panel-body">
+                   <div class="progress">
+                      <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+                  			<span class="sr-only">40% Complete</span>
+                   	</div>
+                  		<span class="progress-type">$29,241 Funded</span>
+                   	<span class="progress-completed">40%</span>
+                   </div>
+                  
+                  
+                  <div class="card-info">
+                  <!--<h5><i class="fa fa-university"></i><strong> Organization: </strong> World Wide Fund for Nature</h5>-->
+                  
+                      <div class="time-space">
+                          <div class="pull-left">
+                              <h6><i class="fa fa-clock-o"s></i><strong> </strong> 100 days left </h6>
+                         </div>
+                         <div class="pull-right">
+                              <h6><i class="fa fa-map-marker"></i><strong> </strong> Vancouver, Canada </h6>
+                         </div>
+                      </div>
+</br>
+  
+                      <div class="project-description">
+                          <p>Texting while driving is never cool. You're putting yourself, as well as others, at risk just because you want to send someone an endless stream of emojis and update your Twitter at the same time.</p>
+                     </div>
+                 
+                  </div>
+                  
+               </div>
+                
+                <a href="#" class="btn btn-info col-xs-12" role="button">View Project</a>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+
+    <!-----------One Info Card---------------->
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <h4> 
+                    <span class="label label-info info">
+                        <span data-toggle="tooltip" title="Viewed"><b class="glyphicon glyphicon-eye-open"></b> 1k </span>
+                        <span data-toggle="tooltip" title="Liked"><b class="fa fa-heart"></b> 263</span>
+                        <span data-toggle="tooltip" title="Comments"><b class="fa fa-comment"></b> 147</span>
+                    </span>
+                </h4>
+                <div class="post">
+                <div class="post-img-content">
+                    <img src="img/car.png" class="img-responsive" />
+                    <span class="post-title"><b>Electric drive</b><br/>
+                        <b> By Green Tech</b></span>
+                </div>
+                </div>
+                
+                <div class="panel-body">
+                   <div class="progress">
+                      <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 37%;">
+                  			<span class="sr-only">37% Complete</span>
+                   	</div>
+                  		<span class="progress-type">$17,429 Funded</span>
+                   	<span class="progress-completed">37%</span>
+                   </div>
+                  
+                  
+                  <div class="card-info">
+                  <!--<h5><i class="fa fa-university"></i><strong> Organization: </strong> World Wide Fund for Nature</h5>-->
+                  
+                      <div class="time-space">
+                          <div class="pull-left">
+                              <h6><i class="fa fa-clock-o"s></i><strong> </strong> 113 days left </h6>
+                         </div>
+                         <div class="pull-right">
+                              <h6><i class="fa fa-map-marker"></i><strong> </strong> San Francisco, United States </h6>
+                         </div>
+                      </div>
+</br>
+  
+                      <div class="project-description">
+                          <p>All-electric vehicles (EVs) run on electricity only. They are propelled by an electric motor (or motors) powered by rechargeable battery packs.</p>
+                     </div>
+                 
+                  </div>
+                  
+               </div>
+                
+                <a href="#" class="btn btn-info col-xs-12" role="button">View Project</a>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+
+    <!-----------One Info Card---------------->
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <h4> 
+                    <span class="label label-info info">
+                        <span data-toggle="tooltip" title="Viewed"><b class="glyphicon glyphicon-eye-open"></b> 257 </span>
+                        <span data-toggle="tooltip" title="Liked"><b class="fa fa-heart"></b> 3</span>
+                        <span data-toggle="tooltip" title="Comments"><b class="fa fa-comment"></b> 17</span>
+                    </span>
+                </h4>
+                <div class="post">
+                <div class="post-img-content">
+                    <img src="img/animal.png" class="img-responsive" />
+                    <span class="post-title"><b>Stop illegal ivory sales      </b><br/>
+                        <b> By WWF</b></span>
+                </div>
+                </div>
+                
+                <div class="panel-body">
+                   <div class="progress">
+                      <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                  			<span class="sr-only">70% Complete</span>
+                   	</div>
+                  		<span class="progress-type">$15,629 Funded</span>
+                   	<span class="progress-completed">70%</span>
+                   </div>
+                  
+                  
+                  <div class="card-info">
+                  <!--<h5><i class="fa fa-university"></i><strong> Organization: </strong> World Wide Fund for Nature</h5>-->
+                  
+                      <div class="time-space">
+                          <div class="pull-left">
+                              <h6><i class="fa fa-clock-o"s></i><strong> </strong> 90 days left </h6>
+                         </div>
+                         <div class="pull-right">
+                              <h6><i class="fa fa-map-marker"></i><strong> </strong> Vancouver, Canada </h6>
+                         </div>
+                      </div>
+</br>
+  
+                      <div class="project-description">
+                          <p>If any elephants are to survive, all ivory trade must stop, concludes a new study examining the viability of regulated trade...</p>
+                     </div>
+                 
+                  </div>
+                  
+               </div>
+                
+                <a href="#" class="btn btn-info col-xs-12" role="button">View Project</a>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+
+    <!-----------One Info Card---------------->
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <h4> 
+                    <span class="label label-info info">
+                        <span data-toggle="tooltip" title="Viewed"><b class="glyphicon glyphicon-eye-open"></b> 257 </span>
+                        <span data-toggle="tooltip" title="Liked"><b class="fa fa-heart"></b> 3</span>
+                        <span data-toggle="tooltip" title="Comments"><b class="fa fa-comment"></b> 17</span>
+                    </span>
+                </h4>
+                <div class="post">
+                <div class="post-img-content">
+                    <img src="img/animal.png" class="img-responsive" />
+                    <span class="post-title"><b>Stop illegal ivory sales      </b><br/>
+                        <b> By WWF</b></span>
+                </div>
+                </div>
+                
+                <div class="panel-body">
+                   <div class="progress">
+                      <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                  			<span class="sr-only">70% Complete</span>
+                   	</div>
+                  		<span class="progress-type">$15,629 Funded</span>
+                   	<span class="progress-completed">70%</span>
+                   </div>
+                  
+                  
+                  <div class="card-info">
+                  <!--<h5><i class="fa fa-university"></i><strong> Organization: </strong> World Wide Fund for Nature</h5>-->
+                  
+                      <div class="time-space">
+                          <div class="pull-left">
+                              <h6><i class="fa fa-clock-o"s></i><strong> </strong> 90 days left </h6>
+                         </div>
+                         <div class="pull-right">
+                              <h6><i class="fa fa-map-marker"></i><strong> </strong> Vancouver, Canada </h6>
+                         </div>
+                      </div>
+</br>
+  
+                      <div class="project-description">
+                          <p>If any elephants are to survive, all ivory trade must stop, concludes a new study examining the viability of regulated trade...</p>
+                     </div>
+                 
+                  </div>
+                  
+               </div>
+                
+                <a href="#" class="btn btn-info col-xs-12" role="button">View Project</a>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+
+ <!-----------One Info Card---------------->
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <h4> 
+                    <span class="label label-info info">
+                        <span data-toggle="tooltip" title="Viewed"><b class="glyphicon glyphicon-eye-open"></b> 257 </span>
+                        <span data-toggle="tooltip" title="Liked"><b class="fa fa-heart"></b> 3</span>
+                        <span data-toggle="tooltip" title="Comments"><b class="fa fa-comment"></b> 17</span>
+                    </span>
+                </h4>
+                <div class="post">
+                <div class="post-img-content">
+                    <img src="img/animal.png" class="img-responsive" />
+                    <span class="post-title"><b>Stop illegal ivory sales      </b><br/>
+                        <b> By WWF</b></span>
+                </div>
+                </div>
+                
+                <div class="panel-body">
+                   <div class="progress">
+                      <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                  			<span class="sr-only">70% Complete</span>
+                   	</div>
+                  		<span class="progress-type">$15,629 Funded</span>
+                   	<span class="progress-completed">70%</span>
+                   </div>
+                  
+                  
+                  <div class="card-info">
+                  <!--<h5><i class="fa fa-university"></i><strong> Organization: </strong> World Wide Fund for Nature</h5>-->
+                  
+                      <div class="time-space">
+                          <div class="pull-left">
+                              <h6><i class="fa fa-clock-o"s></i><strong> </strong> 90 days left </h6>
+                         </div>
+                         <div class="pull-right">
+                              <h6><i class="fa fa-map-marker"></i><strong> </strong> Vancouver, Canada </h6>
+                         </div>
+                      </div>
+</br>
+  
+                      <div class="project-description">
+                          <p>If any elephants are to survive, all ivory trade must stop, concludes a new study examining the viability of regulated trade...</p>
+                     </div>
+                 
+                  </div>
+                  
+               </div>
+                
+                <a href="#" class="btn btn-info col-xs-12" role="button">View Project</a>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+ 
+   
+    </div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+</div><!-- page wrapper to make footer stick to the bottom -->
+
+
+    <footer>
+        <div class="container site-footer">
+            <div class="row">
+                <div class="col-lg-8">
+                    <ul class="list-inline">
+                        <li><a href="#home">About</a>
+                        </li>
+                       <li class="footer-menu-divider">&sdot;</li>
+                        <li><a href="#about">Join</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li><a href="#services">Business</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li><a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted small">Copyright &copy; WOEIGO 2014. All Rights Reserved</p>
+                    
+                </div>
+                <div class="col-lg-4">
+                	<iframe class ="facebook" src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fwoeigo%2F&amp;width&amp;layout=standard&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:80px;" allowTransparency="true"></iframe>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    
+		
+    <!-- JavaScript -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script type="text/javascript">
+	$(document).ready(function(e){
+    $('.search-panel .dropdown-menu').find('a').click(function(e) {
+		e.preventDefault();
+		var param = $(this).attr("href").replace("#","");
+		var concept = $(this).text();
+		$('.search-panel span#search_concept').text(concept);
+		$('.input-group #search_param').val(param);
+			});
+		});
+	</script>
+    <!--------------------Tooltips---------------------------->
+    
+    <script type="text/javascript">
+$(document).ready( function() {
+    $('[data-toggle="tooltip"]').tooltip();
+});</script>
+
+</body>
+
+</html>

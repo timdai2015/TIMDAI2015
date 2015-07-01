@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>WOEIGO</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom Google Web Font -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,600,300,200&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+    <!-- Add custom CSS here -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/woeigo.css" rel="stylesheet">
+    
+    <!-- profile -->
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+    
+    <!-- bootstrap wysihtml5 - text editor -->
+    <link href="css/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css" rel="stylesheet" type="text/css" />
+    
+    
+     <!-- date picker css-->
+    <link href="css/daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+
+<body>
+
+<div class="page-wrap">
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand logo-icon" href="index.html"><img src="img/logo.png"></a>
+            </div>
+            
+			<!----------------------The Search Bar--------------------------->
+    
+            <div class="col-sm-5 col-sm-offset-2 col-xs-12 col-xs-offset-0 search-div">
+            <div class="input-group">
+ 
+                <div class="input-group-btn search-panel">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    	<span id="search_concept"></span> <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#contains">Environmental</a></li>
+                      <li><a href="#its_equal">Humanitarian</a></li>
+                      <li><a href="#greather_than">Animal Welfare</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#all">More+</a></li>
+                    </ul>
+                </div>
+                <input type="hidden" name="search_param" value="all" id="search_param">         
+                <input type="text" class="form-control" name="x" placeholder="Search Causes...">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                </span>
+            </div>
+            </div>
+            
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                	 <!--<li><a href="#">Sign Up</a>
+                    </li>
+                    <li><a href="#">Log In</a>
+                    </li>-->
+					
+                    
+                <!--<li><a href="#"><span class="glyphicon glyphicon-plus"></span> Project</a></li>-->
+                <li><a href="project_preview.html"><span class="glyphicon glyphicon-globe"></span> Explore</a></li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-bell fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-comment fa-fw"></i> New Comment
+                                    <span class="pull-right text-muted small"></span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                    <span class="pull-right text-muted small"></span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-envelope fa-fw"></i> Message Sent
+                                    <span class="pull-right text-muted small"></span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-tasks fa-fw"></i> New Task
+                                    <span class="pull-right text-muted small"></span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                                    <span class="pull-right text-muted small"></span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="#">
+                                <strong>See All Alerts</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-alerts -->
+                </li>
+                    
+                <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-user">
+                    <li><a href="profile.html"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                    </li>
+                    <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                    </li>
+                </ul>
+                <!-- /.dropdown-user -->
+                </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+
+<!------------------------------------------------------------------------------------>
+<!------------------------------------Progress steps---------------------------------->
+<!------------------------------------------------------------------------------------>
+
+
+
+<div class="container progress-step-list">
+            <div class="row bs-wizard" style="border-bottom:0;">
+              	<!-----------swith  "complete" with " disabled" ---------->
+               <!--<div class="col-xs-3 bs-wizard-step complete">  
+                  <div class="text-center bs-wizard-stepnum">Start</div>
+                  <div class="progress"><div class="progress-bar"></div></div>
+                  <a href="#" class="bs-wizard-dot"></a>
+                  <div class="bs-wizard-info text-center">Step 1</div>
+                </div>-->
+                
+          		 <!-----change "col-xs-4" to change the number of steps------->
+                <div class="col-xs-4 bs-wizard-step complete"><!-- complete -->  <!-----------swith  "complete" with " disabled" ---------->
+                  <div class="text-center bs-wizard-stepnum">Basic Information</div>
+                  <div class="progress"><div class="progress-bar"></div></div>
+                  <a href="project_create1.html" class="bs-wizard-dot"></a>
+                  <div class="bs-wizard-info text-center">Step 1</div>
+                </div>
+                
+                <div class="col-xs-4 bs-wizard-step complete"><!-- complete -->  <!-----------swith  "complete" with " disabled" ---------->
+                  <div class="text-center bs-wizard-stepnum">Project Plan</div>
+                  <div class="progress"><div class="progress-bar"></div></div>
+                  <a href="#" class="bs-wizard-dot"></a>
+                  <div class="bs-wizard-info text-center">Step 2</div>
+                </div>
+                
+                <div class="col-xs-4 bs-wizard-step disabled"><!-- active -->  <!-----------swith  "complete" with " disabled" ---------->
+                  <div class="text-center bs-wizard-stepnum">More Information</div>
+                  <div class="progress"><div class="progress-bar"></div></div>
+                  <a href="project_create3.html" class="bs-wizard-dot"></a>
+                  <div class="bs-wizard-info text-center">Step 3</div>
+                </div>
+            </div>
+
+	</div>
+
+
+
+<!------------------------------------------------------------------------------------>
+<!---------------------------Project creation form fields----------------------------->
+<!------------------------------------------------------------------------------------>
+
+<div class="container">
+	<div class="row">
+    	<div class="col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+    		<div class="panel panel-default">
+    
+            <!--<div class="panel-heading">
+            <i class="fa fa-star"></i> Interested Causes
+            </div> -->
+    	
+     		<div class="panel-body">
+				<div class="text-center">
+                 	 <a href="project_create1.html">
+                    <button type="button" class="btn btn-default pull-left ">Back</button>
+                    </a>
+                    <button type="button" class="btn btn-warning pull-right ">Save</button>              
+                  <!-- -------buck tape ------------>
+                  </br>
+                  </br>
+  				</div>   
+                               
+				<div class="col-lg-offset-2 col-lg-8">
+                      <form role="form">
+                      <!-- -------buck tape ------------>
+                      </br>
+                      </br>
+                      <div class="form-group">
+                          <label>Goal</label>
+                          <textarea class="form-control" placeholder=" Variables"></textarea>
+                      </div>
+                      
+                      
+                      <!---------Time ------------>
+                      <!-- Date and time range -->
+                                     <div class="form-group">
+                                        <label>Days</label>
+                                        <div class="input-group">
+                                            <div class="input-group-addon">
+                                                <i class="fa fa-calendar"></i>
+                                            </div>
+                                            <input type="text" class="form-control pull-right" id="reservation" placeholder="Start Date - End Date"/>
+                                        </div><!-- /.input group -->
+                                    	</div><!-- /.form group -->
+
+                                   
+                                    <!-- Date and time range -->
+                                    <!--<div class="form-group">
+                                        <label>Date range button:</label>
+                                        <div class="input-group">
+                                            <button class="btn btn-default pull-right" id="daterange-btn">
+                                                <i class="fa fa-calendar"></i> Date range picker
+                                                <i class="fa fa-caret-down"></i>
+                                            </button>
+                                        </div>
+                                    </div>-->
+                                    
+                      
+                      
+          
+                      <!-- -------Cost Total ------------>
+                      	<label>Cost Total</label>
+                       <div class="form-group input-group">
+                          <span class="input-group-addon">$</span>
+                          <input class="form-control" placeholder="0">
+                          <span class="input-group-addon">.00</span>
+                          
+                      </div>
+
+              </form>  <!-- -------End of the pervious form ------------>
+              
+
+                     
+                  <!-- -------Detailed costs ------------>    
+                  
+                  <!-------Item 1 ------------> 
+                  <div class="row">
+                      <div class="col-md-6 col-md-offset-1">
+                          <div class="form-group">
+                              <label>Cost Breakdown</label>
+                              <!--<input type="text" class="form-control" placeholder="Item 1">-->
+                              
+                              <select id="category" name="category" class="form-control input-xlarge">
+                          		<option value="" selected="selected">Item 1</option>
+                          		<option value="">Material</option>
+                              <option value="">Tech</option>
+                              <option value="">Human Resources</option>
+                              <option value="">More</option>
+                         	 	</select>
+
+                          </div>
+                      </div>
+                      <div class="col-md-5">
+                     			<label>Costs</label>
+                          		<div class="form-group input-group">
+                          		<span class="input-group-addon">$</span>
+                              <input type="text" class="form-control" placeholder="0">
+                              <span class="input-group-addon">.00</span>
+                          </div>
+                      </div>
+                  </div>
+                  <!-------Item 2 ------------> 
+                  <div class="row">
+                      <div class="col-md-6 col-md-offset-1">
+                          <div class="form-group">
+                              <!--<input type="text" class="form-control" placeholder="Item 1">-->
+                              
+                              <select id="category" name="category" class="form-control input-xlarge">
+                          		<option value="" selected="selected">Item 2</option>
+                          		<option value="">Material</option>
+                              <option value="">Tech</option>
+                              <option value="">Human Resources</option>
+                              <option value="">More</option>
+
+                         	 	</select>
+                          </div>
+                      </div>
+                      <div class="col-md-5">
+                          		<div class="form-group input-group">
+                          		<span class="input-group-addon">$</span>
+                              <input type="text" class="form-control" placeholder="0">
+                              <span class="input-group-addon">.00</span>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <!-------Item 3 ------------> 
+                  <div class="row">
+                      <div class="col-md-6 col-md-offset-1">
+                          <div class="form-group">
+                              <!--<input type="text" class="form-control" placeholder="Item 1">-->
+                              
+                              <select id="category" name="category" class="form-control input-xlarge">
+                          		<option value="" selected="selected">Item 3</option>
+                          		<option value="">Material</option>
+                              <option value="">Tech</option>
+                              <option value="">Human Resources</option>
+                              <option value="">More</option>
+
+                         	 	</select>
+                          </div>
+                      </div>
+                      <div class="col-md-5">
+                          		<div class="form-group input-group">
+                          		<span class="input-group-addon">$</span>
+                              <input type="text" class="form-control" placeholder="0">
+                              <span class="input-group-addon">.00</span>
+                          </div>
+                      </div>
+                  </div>
+                  <!-------Item 4 ------------> 
+                  <div class="row">
+                      <div class="col-md-6 col-md-offset-1">
+                          <div class="form-group">
+                              <!--<input type="text" class="form-control" placeholder="Item 1">-->
+                              
+                              <select id="category" name="category" class="form-control input-xlarge">
+                          		<option value="" selected="selected">Item 4</option>
+                          		<option value="">Material</option>
+                              <option value="">Tech</option>
+                              <option value="">Human Resources</option>
+                              <option value="">More</option>
+
+                         	 	</select>
+                          </div>
+                      </div>
+                      <div class="col-md-5">
+                          		<div class="form-group input-group">
+                          		<span class="input-group-addon">$</span>
+                              <input type="text" class="form-control" placeholder="0">
+                              <span class="input-group-addon">.00</span>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <!--------------Dynamic Form ---------------> 
+                  <!-------Add another COST button------------> 
+                 <!-- <div class="row">
+                      <div class="col-md-6 col-md-offset-1">
+                          <div class="form-group">
+                             
+                              
+                              <form role="form" autocomplete="off">
+                              <div class="entry input-group ">
+                                  <input class="form-control" name="fields[]" type="text" placeholder="Add New Item" />
+                                  
+                                 
+                                  
+                                  <span class="input-group-btn">
+                                      <button class="btn btn-success btn-add" type="button">
+                                          <span class="glyphicon glyphicon-plus"></span>
+                                      </button>
+                                  </span>
+                              </div>
+                          </form>
+                 
+                      
+                          </div>
+                      </div>
+                      
+                      <div class="col-md-5">
+                          		<div class="form-group input-group">
+                          		<span class="input-group-addon">$</span>
+                              <input type="text" class="form-control" placeholder="0">
+                              <span class="input-group-addon">.00</span>
+                          </div>
+                      </div>
+                  </div>-->
+                  
+                  <!-- ONLY an add button-->
+                  <div class="row">
+                      <div class="col-md-6 col-md-offset-1">
+                          <button type="button" class="btn btn-success btn-block"><span class="glyphicon glyphicon-plus"></span> Add New Item</button>
+                      </div>
+                  </div>
+                  
+                  
+                  
+                  <!-- -------Dynamic Form ------------>             
+<!--                  <div class="control-group" id="fields">
+                      <label class="control-label" for="field1">Add another cost</label>
+                      <div class="controls"> 
+                          <form role="form" autocomplete="off">
+                              <div class="entry input-group col-xs-3">
+                                  <input class="form-control" name="fields[]" type="text" placeholder="Type something" />
+                                  
+                                  <span class="input-group-btn">
+                                      <button class="btn btn-success btn-add" type="button">
+                                          <span class="glyphicon glyphicon-plus"></span>
+                                      </button>
+                                  </span>
+                              </div>
+                          </form>
+                      <br>
+                      <small>Press <span class="glyphicon glyphicon-plus gs"></span> to add another form field :)</small>
+                      </div>
+                  </div>  -->                             
+                               
+                  <form>
+    
+
+</form>             
+                               
+
+
+              <!-- -------buck tape ------------>
+              </br>
+              </br>       
+                     
+                     
+             <!-- -------skills ------------>       
+             <!-----------------------------dynamic dropdown (Testing) -------------------------->
+             <div class="container">
+                    <div class="row">
+              
+                      <div class="control-group" id="fields">
+                            <label class="control-label" for="field1">Skills</label>
+                             <div class="controls"> 
+                            <form role="form" autocomplete="off">
+                            <div class="entry input-group col-xs-6">	
+                         
+                         <select class="form-control" name="fields[]" type="text">
+                            <option value="" selected="selected">Select a Skill</option>
+                            <option value="">Marketing</option>
+                            <option value="">Event Planning</option>
+                            <option value="">Web Design</option>
+                            <option value="">Web Development</option>
+                            <option value="">Public Relation</option>
+                            <option value="">Sales</option>
+                            <option value="">Project Management</option>
+                         </select>
+                                <span class="input-group-btn">
+                         <button class="btn btn-success btn-add" type="button">
+                                <span class="glyphicon glyphicon-plus"></span>
+                            </button>
+                            </span>
+                        </div>
+                     </form>
+                        <br>
+                        <!--<small>Press <span class="glyphicon glyphicon-plus gs"></span> Add another skill</small>-->
+                        </div>
+                    </div>
+              
+                 </div>
+             </div>  
+                     
+                     
+                     
+                     <!---------Time ------------>
+                      <!-- Date and time range -->
+                     
+                     
+                     
+ 			<!-- -------buck tape ------------>
+              </br>
+              <div class="text-center">
+              	<a href="project_create3.html">
+               <button type="button" class="btn btn-info ">Continue</button>
+               </a>
+              <!-- -------buck tape ------------>
+              </br>
+              </br>  
+          	  </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+        
+          
+                                       
+                                              
+                               
+ 
+</div><!-- page wrapper to make footer stick to the bottom -->
+
+
+
+		
+    <footer>
+        <div class="container site-footer">
+            <div class="row">
+                <div class="col-lg-8">
+                    <ul class="list-inline">
+                        <li><a href="#home">About</a>
+                        </li>
+                       <li class="footer-menu-divider">&sdot;</li>
+                        <li><a href="help.html">Help</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li><a href="#services">Business</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li><a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted small">Copyright &copy; WOEIGO 2014. All Rights Reserved</p>
+                    
+                </div>
+                <div class="col-lg-4">
+                	<iframe class ="facebook" src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fwoeigo%2F&amp;width&amp;layout=standard&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:80px;" allowTransparency="true"></iframe>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    
+
+	
+
+
+		
+
+   <!-- Search interaction at the top -->
+    <!-- Need to be placed after the "simple editor javascript. but not sure why -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <!--<script src="js/bootstrap.js"></script>
+    <!-- the part above needs to be removed or the search dropdown or the editor won't work properly, because the other bootstrap.(min).js will work both for this and other function, but this bootstrap only works for this feature-->
+    <script type="text/javascript">
+	$(document).ready(function(e){
+    $('.search-panel .dropdown-menu').find('a').click(function(e) {
+		e.preventDefault();
+		var param = $(this).attr("href").replace("#","");
+		var concept = $(this).text();
+		$('.search-panel span#search_concept').text(concept);
+		$('.input-group #search_param').val(param);
+			});
+		});
+	</script>
+
+
+    
+    
+     <!-- dynamic form fields add and remove -->
+
+    <script type="text/javascript">
+	  $(function()
+	  {
+		  $(document).on('click', '.btn-add', function(e)
+		  {
+			  e.preventDefault();
+	  
+			  var controlForm = $('.controls form:first'),
+				  currentEntry = $(this).parents('.entry:first'),
+				  newEntry = $(currentEntry.clone()).appendTo(controlForm);
+	  
+			  newEntry.find('input').val('');
+			  controlForm.find('.entry:not(:last) .btn-add')
+				  .removeClass('btn-add').addClass('btn-remove')
+				  .removeClass('btn-success').addClass('btn-danger')
+				  .html('<span class="glyphicon glyphicon-minus"></span>');
+		  }).on('click', '.btn-remove', function(e)
+		  {
+			  $(this).parents('.entry:first').remove();
+	  
+			  e.preventDefault();
+			  return false;
+		  });
+	  });
+	 </script>
+     
+     
+     
+	<!--------------------date picker-------------------->
+		
+        
+		<!-- jQuery 2.0.2 -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+        <!-- Bootstrap -->
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+     
+     	<!-- InputMask -->
+        <script src="js/input-mask/jquery.inputmask.js" type="text/javascript"></script>
+        <script src="js/input-mask/jquery.inputmask.date.extensions.js" type="text/javascript"></script>
+        <script src="js/input-mask/jquery.inputmask.extensions.js" type="text/javascript"></script>
+        <!-- date-range-picker -->
+        <script src="js/daterangepicker/daterangepicker.js" type="text/javascript"></script>
+     
+    	<script type="text/javascript">
+            $(function() {
+                //Datemask dd/mm/yyyy
+                $("#datemask").inputmask("dd/mm/yyyy", {"placeholder": "dd/mm/yyyy"});
+                //Datemask2 mm/dd/yyyy
+                $("#datemask2").inputmask("mm/dd/yyyy", {"placeholder": "mm/dd/yyyy"});
+                //Money Euro
+                $("[data-mask]").inputmask();
+
+                //Date range picker
+                $('#reservation').daterangepicker();
+                //Date range picker with time picker
+                $('#reservationtime').daterangepicker({timePicker: true, timePickerIncrement: 30, format: 'MM/DD/YYYY h:mm A'});
+                //Date range as a button
+                $('#daterange-btn').daterangepicker(
+                        {
+                            ranges: {
+                                'Today': [moment(), moment()],
+                                'Yesterday': [moment().subtract('days', 1), moment().subtract('days', 1)],
+                                'Last 7 Days': [moment().subtract('days', 6), moment()],
+                                'Last 30 Days': [moment().subtract('days', 29), moment()],
+                                'This Month': [moment().startOf('month'), moment().endOf('month')],
+                                'Last Month': [moment().subtract('month', 1).startOf('month'), moment().subtract('month', 1).endOf('month')]
+                            },
+                            startDate: moment().subtract('days', 29),
+                            endDate: moment()
+                        },
+                function(start, end) {
+                    $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+                }
+                );
+
+                //iCheck for checkbox and radio inputs
+                $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
+                    checkboxClass: 'icheckbox_minimal',
+                    radioClass: 'iradio_minimal'
+                });
+                //Red color scheme for iCheck
+                $('input[type="checkbox"].minimal-red, input[type="radio"].minimal-red').iCheck({
+                    checkboxClass: 'icheckbox_minimal-red',
+                    radioClass: 'iradio_minimal-red'
+                });
+                //Flat red color scheme for iCheck
+                $('input[type="checkbox"].flat-red, input[type="radio"].flat-red').iCheck({
+                    checkboxClass: 'icheckbox_flat-red',
+                    radioClass: 'iradio_flat-red'
+                });
+
+                //Colorpicker
+                $(".my-colorpicker1").colorpicker();
+                //color picker with addon
+                $(".my-colorpicker2").colorpicker();
+
+                //Timepicker
+                $(".timepicker").timepicker({
+                    showInputs: false
+                });
+            });
+        </script>
+     
+     
+
+</body>
+
+</html>

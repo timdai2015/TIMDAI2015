@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Sponsor</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom Google Web Font -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,600,300,200&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+    <!-- Add custom CSS here -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/woeigo.css" rel="stylesheet">
+    
+    <!-- profile -->
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+
+
+</head>
+
+
+<body>
+<div class="page-wrap">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand logo-icon" href="index.html"><img src="img/logo.png"></a>
+            </div>
+            
+             <!----------------------The Search Bar--------------------------->
+    
+            <div class="col-xs-5 col-xs-offset-2 search-div">
+            	<div class="input-group">
+					<div class="input-group-btn search-panel">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    	<span id="search_concept"></span> <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#contains">Environmental</a></li>
+                      <li><a href="#its_equal">Humanitarian</a></li>
+                      <li><a href="#greather_than">Animal Welfare</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#all">More+</a></li>
+                    </ul>
+                	</div>
+                	<input type="hidden" name="search_param" value="all" id="search_param">         
+                	<input type="text" class="form-control" name="x" placeholder="Search Causes...">
+                	<span class="input-group-btn">
+                    	<button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                	</span>
+            	</div>
+            </div>
+            
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                	 <li><a href="#">Sign Up</a>
+                    </li>
+                    <li><a href="#">Log In</a>
+                    </li>
+					
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-bell fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-comment fa-fw"></i> New Comment
+                                    <span class="pull-right text-muted small"></span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                    <span class="pull-right text-muted small"></span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-envelope fa-fw"></i> Message Sent
+                                    <span class="pull-right text-muted small"></span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-tasks fa-fw"></i> New Task
+                                    <span class="pull-right text-muted small"></span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                                    <span class="pull-right text-muted small"></span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="#">
+                                <strong>See All Alerts</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-alerts -->
+                </li>
+                    
+                    
+                    
+                <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-user">
+                    <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                    </li>
+                    <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                    </li>
+                </ul>
+                <!-- /.dropdown-user -->
+                </li>
+               </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+
+<!------------------------------------Profile box--------------------------------------->
+<div class="profile-summary">
+    <div class="container">
+	<div class="row">
+		<div class="col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+    	 <div class="well profile">
+            <div class="col-sm-12">
+            	<!-------------------Img/logo---------------------->
+                <div class="col-xs-12 col-sm-4 text-center">
+                    <figure>
+                        <img src="img/koodo.jpg" alt="" class="img-responsive nfp-ngo-profile-img">
+         			<br/>
+                    </figure>
+                </div>
+            	<!-------------------Text/info---------------------->
+                <div class="col-xs-12 col-sm-8">
+       
+                    <div class="text-center">
+                      <h3><strong>Koodo Mobile</strong></h3>
+                      <p><a href="https://www.worldwildlife.org">www.koodomobile.org</a></p>
+  
+                      <div id="nfp-ngo-profil-social-media" >
+                            <ul class="nav navbar-nav " >
+                                <li><a href="https://twitter.com/WOEIGO" class="social-icon"><img src="img/s_twitter.png"></a>
+                                </li>
+                                <li><a href="https://www.facebook.com/woeigo" class="social-icon"><img src="img/s_facebook.png"></a>
+                                </li>
+	                                <li><a href="https://plus.google.com/102146306129317100743" class="social-icon"><img src="img/s_google+.png"></a>
+                                </li>
+                                <li><a href="https://www.indiegogo.com/projects/woeigo-change-the-world" class="social-icon"><img src="img/s_vimeo.png"></a>
+                                </li>
+            
+                            </ul>
+                      </div>
+                      
+                      <br/>
+
+                      
+                      
+					</div>
+					<p>The world’s leading conservation organization, WWF works in 100 countries and is supported by 1.1 million members in the United States and close to 5 million globally. WWF’s unique way of working combines global reach with a foundation in...<a>Read more</a></p>
+
+
+
+              </div>             
+            </div>            
+            <div class="col-xs-12 divider text-center">
+                <div class="col-xs-12 col-sm-4 emphasis">
+                    <h2><strong> 1,7k </strong></h2>                    
+                    <p><small>Followers</small></p>
+                    <button class="btn btn-success btn-block view-buttons"><span class="fa fa-plus-circle"></span> Follow </button>
+                </div>
+                <div class="col-xs-12 col-sm-4 emphasis">
+                    <h2><strong>145</strong></h2>                    
+                    <p><small>Thanks</small></p>
+                    <button class="btn btn-info btn-block view-buttons"><span class="fa fa-heart"></span> Thank </button>
+                </div>
+                
+                <div class="col-xs-12 col-sm-4 emphasis">
+                    <h2><strong>15</strong></h2>                    
+                    <p><small>Campaigns</small></p>
+                    <button class="btn btn-primary btn-block view-buttons"> View </button>
+                </div>                
+            	<!-------------------dropdown buttons---------------------->
+                
+                <!--<div class="col-xs-12 col-sm-4 emphasis share-button">
+                    <h2><strong>23</strong></h2>                    
+                    <p><small>Campaigns</small></p>
+                    <div id="socialShare" class="btn-group-option share-group  btn-block ">
+                      <button type="button" class="btn btn-primary  dropdown-toggle share btn-option view-buttons" id="nfp-ngo-campaign-btn"><span class="fa fa-bullseye"></span> Campaigns </button>
+                      <button type="button" class="btn btn-primary dropdown-toggle view-buttons" id="nfp-ngo-more-btn" data-toggle="dropdown">
+                        <span class="caret"></span>
+                      </button>
+                      <ul class=" nfp-ngo-dropdown dropdown-menu text-left" role="menu">
+                        <li><a href="#"><span class="fa fa-envelope pull-right"></span> Send an email </a></li>
+                        <li><a href="#"><span class="fa fa-list pull-right"></span> Add or remove from a list  </a></li>
+                        <li class="divider"></li>
+                        <li><a href="#"><span class="fa fa-warning pull-right"></span>Report this user for spam</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#" class="btn disabled" role="button"> Unfollow </a></li>
+                      </ul>
+                    </div>
+                </div>-->
+            </div>
+    	 </div>                 
+		</div>
+	</div>
+</div>
+</div>
+
+
+
+ <!-----------------------------------About------------------------------------------->
+
+<div class="container panel-margin-woeigo">
+	<div class="row">
+    	<div class="col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+   			<div class="panel panel-default ">
+      			<div class="panel-heading panel-heading-woeigo">
+      				<i class="fa fa-star"></i><strong> About</strong>
+      			</div> 
+      			<div class="panel-body">
+      			<p>The world’s leading conservation organization, WWF works in 100 countries and is supported by 1.1 million members in the United States and close to 5 million globally. WWF’s unique way of working combines global reach with a foundation in science, involves action at every level from local to global, and ensures the delivery of innovative solutions that meet the needs of both people and nature.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<!-----------------------------------Missions/Goals------------------------------------------->
+
+<div class="container panel-margin-woeigo">
+	<div class="row">
+    	<div class="col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+    		<div class="panel panel-default">
+      			<div class="panel-heading panel-heading-woeigo">
+      				<i class="fa fa-star"></i><strong>Missions</strong>
+      			</div> 
+      			<div class="panel-body">
+                        <ul class="ds-btn">
+                        <!--<li>
+                             <a class="btn btn-lg " href="http://dotstrap.com/">
+                          <i class="glyphicon glyphicon-link pull-left"></i><span>User Profile<br><small>Lorem ipsum dolor</small></span></a> 
+                            
+                        </li>-->
+                        <li>
+                             <a class="btn btn-lg btn-info" href="#">
+                          <i class="glyphicon glyphicon-user pull-left"></i><span>Conserve nature</span></a> 
+                            
+                        </li>
+                        <li>
+                             <a class="btn btn-lg btn-info " href="#">
+                         <i class="glyphicon glyphicon-tree-deciduous pull-left"></i><span>Diversity of life on Earth</span></a> 
+                            
+                        </li>
+                        <li>
+                             <a class="btn btn-lg btn-info" href="#">
+                         <i class="glyphicon glyphicon-cloud pull-left"></i><span>Harmony with nature.</span></a> 
+                            
+                        </li>
+                        <li>
+                               <a class="btn btn-lg btn-info" href="#">
+                        <i class="glyphicon glyphicon-globe pull-left"></i><span>Share the Earth</span></a> 
+                        </li>
+                        <li>
+                               <a class="btn btn-lg btn-info" href="#">
+                         <i class="glyphicon glyphicon-wrench pull-left"></i><span>Protect and restore species</span></a> 
+                        </li>
+                    </ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+ 
+
+
+ <!-----------------------------------timeline------------------------------------------->
+       
+	<div class="container panel-margin-woeigo">
+        <div class="row">
+        	<div class="col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+				<div class="panel panel-default">
+                  <div class="panel-heading panel-heading-woeigo">
+                  <i class="fa fa-clock-o fa-fw"></i><strong> Project History </strong>
+                  </div>   
+                                        
+                  <div class="panel-body">
+                      <ul class="timeline">
+                          <li>
+                              <div class="timeline-badge"><i class="fa fa-check"></i>
+                              </div>
+                              <div class="timeline-panel">
+                                  <div class="timeline-heading">
+                                      <h4 class="timeline-title">Shared the cause on twitter</h4>
+                                      <p><small class="text-muted"><i class="fa fa-clock-o"></i> 11 hours ago via Twitter</small>
+                                      </p>
+                                  </div>
+                                  <div class="timeline-body">
+                                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero laboriosam dolor perspiciatis omnis exercitationem. Beatae, officia pariatur? Est cum veniam excepturi. Maiores praesentium, porro voluptas suscipit facere rem dicta, debitis.</p>
+                                  </div>
+                              </div>
+                          </li>
+                          <li class="timeline-inverted">
+                              <div class="timeline-badge warning"><i class="fa fa-credit-card"></i>
+                              </div>
+                              <div class="timeline-panel">
+                                  <div class="timeline-heading">
+                                      <h4 class="timeline-title">Donation to "One Less Car"</h4>
+                                  </div>
+                                  <div class="timeline-body">
+                                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dolorem quibusdam, tenetur commodi provident cumque magni voluptatem libero, quis rerum. Fugiat esse debitis optio, tempore. Animi officiis alias, officia repellendus.</p>
+                                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium maiores odit qui est tempora eos, nostrum provident explicabo dignissimos debitis vel! Adipisci eius voluptates, ad aut recusandae minus eaque facere.</p>
+                                  </div>
+                              </div>
+                          </li>
+                          <li>
+                              <div class="timeline-badge danger"><i class="fa fa-bomb"></i>
+                              </div>
+                              <div class="timeline-panel">
+                                  <div class="timeline-heading">
+                                      <h4 class="timeline-title">Followed "Sally Horton"</h4>
+                                  </div>
+                                  <div class="timeline-body">
+                                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus numquam facilis enim eaque, tenetur nam id qui vel velit similique nihil iure molestias aliquam, voluptatem totam quaerat, magni commodi quisquam.</p>
+                                  </div>
+                              </div>
+                          </li>
+                          <li class="timeline-inverted">
+                              <div class="timeline-panel">
+                                  <div class="timeline-heading">
+                                      <h4 class="timeline-title">Volunteered at "No Text and drive"</h4>
+                                  </div>
+                                  <div class="timeline-body">
+                                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates est quaerat asperiores sapiente, eligendi, nihil. Itaque quos, alias sapiente rerum quas odit! Aperiam officiis quidem delectus libero, omnis ut debitis!</p>
+                                  </div>
+                              </div>
+                          </li>
+                          <li>
+                              <div class="timeline-badge info"><i class="fa fa-save"></i>
+                              </div>
+                              <div class="timeline-panel">
+                                  <div class="timeline-heading">
+                                      <h4 class="timeline-title">Created "Project Environment"</h4>
+                                  </div>
+                                  <div class="timeline-body">
+                                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis minus modi quam ipsum alias at est molestiae excepturi delectus nesciunt, quibusdam debitis amet, beatae consequuntur impedit nulla qui! Laborum, atque.</p>
+                                      <hr>
+                                      <div class="btn-group">
+                                          <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
+                                              <i class="fa fa-gear"></i>  <span class="caret"></span>
+                                          </button>
+                                          <ul class="dropdown-menu" role="menu">
+                                              <li><a href="#">Action</a>
+                                              </li>
+                                              <li><a href="#">Another action</a>
+                                              </li>
+                                              <li><a href="#">Something else here</a>
+                                              </li>
+                                              <li class="divider"></li>
+                                              <li><a href="#">Separated link</a>
+                                              </li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                              </div>
+                          </li>
+                          <li>
+                              <div class="timeline-panel">
+                                  <div class="timeline-heading">
+                                      <h4 class="timeline-title">Volunteered at "Vegan West"</h4>
+                                  </div>
+                                  <div class="timeline-body">
+                                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi fuga odio quibusdam. Iure expedita, incidunt unde quis nam! Quod, quisquam. Officia quam qui adipisci quas consequuntur nostrum sequi. Consequuntur, commodi.</p>
+                                  </div>
+                              </div>
+                          </li>
+                          <li class="timeline-inverted">
+                              <div class="timeline-badge success"><i class="fa fa-graduation-cap"></i>
+                              </div>
+                              <div class="timeline-panel">
+                                  <div class="timeline-heading">
+                                      <h4 class="timeline-title">Joined WOEIGO</h4>
+                                  </div>
+                                  <div class="timeline-body">
+                                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt obcaecati, quaerat tempore officia voluptas debitis consectetur culpa amet, accusamus dolorum fugiat, animi dicta aperiam, enim incidunt quisquam maxime neque eaque.</p>
+                                  </div>
+                              </div>
+                          </li>
+                      </ul>
+                  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+
+
+
+    <footer>
+        <div class="container site-footer">
+            <div class="row">
+                <div class="col-lg-8">
+                    <ul class="list-inline">
+                        <li><a href="#home">About</a>
+                        </li>
+                       <li class="footer-menu-divider">&sdot;</li>
+                        <li><a href="help.html">Help</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li><a href="#services">Business</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li><a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted small">Copyright &copy; WOEIGO 2014. All Rights Reserved</p>
+                    
+                </div>
+                <div class="col-lg-4">
+                	<iframe class ="facebook" src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fwoeigo%2F&amp;width&amp;layout=standard&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:80px;" allowTransparency="true"></iframe>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    
+
+	
+
+
+		
+    <!-- Search interaction at the top -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script type="text/javascript">
+	$(document).ready(function(e){
+    $('.search-panel .dropdown-menu').find('a').click(function(e) {
+		e.preventDefault();
+		var param = $(this).attr("href").replace("#","");
+		var concept = $(this).text();
+		$('.search-panel span#search_concept').text(concept);
+		$('.input-group #search_param').val(param);
+			});
+		});
+	</script>
+
+</body>
+
+</html>

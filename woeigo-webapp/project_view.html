@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>project_view</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom Google Web Font -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,600,300,200&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+    <!-- Add custom CSS here -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/woeigo.css" rel="stylesheet">
+    
+    <!-- profile -->
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+
+
+</head>
+
+
+<body>
+
+<div class="page-wrap">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand logo-icon" href="index.html"><img src="img/logo.png"></a>
+            </div>
+            
+             <!----------------------The Search Bar--------------------------->
+    
+            <div class="col-xs-4 col-md-5  col-xs-offset-0 col-md-offset-1 col-lg-offset-2 search-div">
+            <div class="input-group">
+                <div class="input-group-btn search-panel">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    	<span id="search_concept"></span> <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#contains">Environmental</a></li>
+                      <li><a href="#its_equal">Humanitarian</a></li>
+                      <li><a href="#greather_than">Animal Welfare</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#all">More+</a></li>
+                    </ul>
+                </div>
+                <input type="hidden" name="search_param" value="all" id="search_param">         
+                <input type="text" class="form-control" name="x" placeholder="Search Causes...">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                </span>
+            </div>
+            </div>
+            
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                <li><a href="project_create1.html"><span class="glyphicon glyphicon-plus"></span> Project</a></li>
+                <li><a href="project_preview.html"><span class="glyphicon glyphicon-globe"></span> Explore</a></li>					
+                    
+                    <!----------------------Drop down buttons--------------------------->
+                    
+                    
+<!--                    <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-envelope fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-messages">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>John Smith</strong>
+                                    <span class="pull-right text-muted">
+                                        <em>Yesterday</em>
+                                    </span>
+                                </div>
+                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>John Smith</strong>
+                                    <span class="pull-right text-muted">
+                                        <em>Yesterday</em>
+                                    </span>
+                                </div>
+                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>John Smith</strong>
+                                    <span class="pull-right text-muted">
+                                        <em>Yesterday</em>
+                                    </span>
+                                </div>
+                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="#">
+                                <strong>Read All Messages</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                  
+                </li>-->
+                
+                
+                <!-- /.dropdown -->
+                <!--<li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-tasks fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-tasks">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Task 1</strong>
+                                        <span class="pull-right text-muted">40% Complete</span>
+                                    </p>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                            <span class="sr-only">40% Complete (success)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Task 2</strong>
+                                        <span class="pull-right text-muted">20% Complete</span>
+                                    </p>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                                            <span class="sr-only">20% Complete</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Task 3</strong>
+                                        <span class="pull-right text-muted">60% Complete</span>
+                                    </p>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                            <span class="sr-only">60% Complete (warning)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Task 4</strong>
+                                        <span class="pull-right text-muted">80% Complete</span>
+                                    </p>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                            <span class="sr-only">80% Complete (danger)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="#">
+                                <strong>See All Tasks</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </li>-->
+                
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-bell fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-comment fa-fw"></i> New Comment
+                                    <span class="pull-right text-muted small"></span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                    <span class="pull-right text-muted small"></span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-envelope fa-fw"></i> Message Sent
+                                    <span class="pull-right text-muted small"></span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-tasks fa-fw"></i> New Task
+                                    <span class="pull-right text-muted small"></span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                                    <span class="pull-right text-muted small"></span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="#">
+                                <strong>See All Alerts</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-alerts -->
+                </li>
+                    
+                    <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                	</li>
+
+                </ul>              
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+<!------------------------------------Basic Tab--------------------------------------->
+
+
+	<!--<div class="basic-tab">
+   	 <div class="container">
+            <div class="row">
+                <div class="col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+                    <div class="panel panel-default">
+ 
+                     
+                        <div class="panel-body">
+                        
+                            <ul class="nav nav-tabs">
+                                <li ><a href="#home" data-toggle="tab">Account</a>
+                                </li>
+                                <li class="active"><a href="#profile" data-toggle="tab">Profile</a>
+                                </li>
+                                <li><a href="#messages" data-toggle="tab">Payment Info</a>
+                                </li>
+                                <li><a href="#settings" data-toggle="tab">Settings</a>
+                                </li>
+                                <button type="button" class="btn btn-info pull-right">Edit Profile</button>
+                            </ul>
+                            
+                            
+
+                          
+                            <div class="tab-content">
+                                <div class="tab-pane fade in active" id="home">
+                                    <h4></h4>
+                                    <p></p>
+                                </div>
+                                <div class="tab-pane fade" id="profile">
+                                    <h4></h4>
+                                    <p></p>
+                                </div>
+                                <div class="tab-pane fade" id="messages">
+                                    <h4></h4>
+                                    <p></p>
+                                </div>
+                                <div class="tab-pane fade" id="settings">
+                                    <h4></h4>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                     
+                    </div>
+                   
+                </div>
+                
+            </div>
+	</div>
+  </div>-->
+
+
+<!------------------------------------project info box--------------------------------------->
+<div class="profile-summary">
+    <div class="container panel-margin-woeigo">
+	 <div class="row">
+		<div class="col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+    	 <div class="well profile">
+            
+            <!------------image---------------->    
+                <div class="col-xs-12 col-sm-12 text-left">                               
+                  <div class="thumbnail">
+                  
+                    <h4> 
+                        <span class="label label-info info">
+                            <span data-toggle="tooltip" title="Viewed"><b class="glyphicon glyphicon-eye-open"></b> 1k </span>
+                            <span data-toggle="tooltip" title="Liked"><b class="fa fa-heart"></b> 209</span>
+                            <span data-toggle="tooltip" title="Comments"><b class="fa fa-comment"></b> 46</span>
+                        </span>
+                    </h4>
+                   
+                    
+                    <figure class="post-view">
+                      <div class="post-img-content">
+                          <img src="img/car.png" class="img-responsive" />
+                          <span class="post-title"><b>Electric Drive   </b><br/>
+                              <b class="by-whom"> By Green Tech</b></span>
+                      </div>
+                    </figure>
+
+                  </div>
+                 </div>
+                
+                <!------------project details---------------->    
+                <div class="col-xs-12 col-sm-12">
+                	<div class="progress-project-view">
+                      <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                  			<span class="sr-only">70% Complete</span>
+                   	</div>
+                  		<span class="progress-type">$15,629 Funded</span>
+                   	<span class="progress-completed">70%</span>
+                   </div>
+                
+                	 <div class="card-info">
+                  <!--<h5><i class="fa fa-university"></i><strong> Organization: </strong> World Wide Fund for Nature</h5>-->
+                      <div class="time-space">
+                      		<div class="row">
+                              <div class="col-xs-12 col-sm-4 ">
+                                  <h4><i class="fa fa-clock-o"s></i><strong></strong> &nbsp 90 days left </h4>
+                             </div>
+                             
+                             <div class="col-xs-12 col-sm-4 text-center">
+                                  <h4><i class="fa fa-user"s></i><strong></strong>&nbsp Johnny Smith </h4>
+                             </div>
+                             
+                             <div class="col-xs-12 col-sm-4 text-right">
+                                  <h4><i class="fa fa-map-marker"></i><strong> </strong>&nbsp Vancouver, Canada </h4>
+                             </div>
+                      		</div>
+                      	</div>
+</br>
+                  </div>
+                
+                
+<!--                    <h2></h2>
+                    <p><strong>Role: </strong> Social Media Manager.</p>
+                    <p><strong>About: </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>-->
+               
+                </div>  
+            
+                
+            <!------------Buttons---------------->    
+            <div class="col-xs-12 divider text-center">
+                <div class="col-sm-12 col-lg-4 emphasis">
+                    <h2><strong> 37 </strong></h2>                    
+                    <p><small>Volunteers</small></p>
+                    <button class="btn btn-success btn-block view-buttons"><span class="fa fa-group"></span> Volunteer </button>
+                </div>
+                <div class="col-sm-12 col-lg-4 emphasis">
+                    <h2><strong>145</strong></h2>                    
+                    <p><small>Supports</small></p>
+                    <button class="btn btn-warning btn-block view-buttons"><span class="fa fa-dollar"></span> Donate </button>
+                </div>
+                
+                <div class="col-sm-12 col-lg-2 emphasis follow-button">
+                    <h2><strong>273</strong></h2>                    
+                    <p><small>Followers</small></p>
+                    <button class="btn btn-info btn-block view-buttons "> Follow </button>
+                </div>
+                
+                <div class="col-sm-12 col-lg-2 emphasis share-button">
+                    <h2><strong>43</strong></h2>                    
+                    <p><small>times</small></p>
+                    
+                    <div class="mobile-social-share">
+                      <div id="socialShare" class="btn-group share-group">
+                          <a data-toggle="dropdown" class="btn btn-info view-buttons">
+                               <i class="fa fa-share-alt fa-inverse icon-align "> Share</i> 
+                          </a>
+                          <button href="#" data-toggle="dropdown" class="btn btn-info dropdown-toggle share view-buttons">
+                              <span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu">
+                              <li>
+                                  <a data-original-title="Twitter" rel="tooltip"  href="#" class="btn btn-twitter" data-placement="left">
+                                      <i class="fa fa-twitter"></i>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a data-original-title="Facebook" rel="tooltip"  href="#" class="btn btn-facebook" data-placement="left">
+                                      <i class="fa fa-facebook"></i>
+                                  </a>
+                              </li>					
+                              <li>
+                                  <a data-original-title="Google+" rel="tooltip"  href="#" class="btn btn-google" data-placement="left">
+                                      <i class="fa fa-google-plus"></i>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a data-original-title="LinkedIn" rel="tooltip"  href="#" class="btn btn-linkedin" data-placement="left">
+                                      <i class="fa fa-linkedin"></i>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a data-original-title="Pinterest" rel="tooltip"  class="btn btn-pinterest" data-placement="left">
+                                      <i class="fa fa-pinterest"></i>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a  data-original-title="Email" rel="tooltip" class="btn btn-mail" data-placement="left">
+                                      <i class="fa fa-envelope"></i>
+                                  </a>
+                              </li>
+                          </ul>
+                      </div>
+                    </div>     
+               </div>
+            </div>
+    	 </div>                 
+		</div>
+	</div>
+</div>
+</div>
+
+
+
+ <!-----------------------------------Descriptions------------------------------------------->
+
+<div class="container panel-margin-woeigo">
+	<div class="row">
+    	<div class="col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+   			<div class="panel panel-default ">
+      			<div class="panel-heading panel-heading-woeigo">
+      				<i class="fa fa-star"></i><strong> Descriptions </strong>
+      			</div> 
+      			<div class="panel-body">
+      			<p>The Electric Drive Transportation Association (EDTA) is the trade association promoting battery, hybrid, plug-in hybrid and fuel cell electric drive technologies and infrastructure. EDTA conducts public policy advocacy, provides education and awareness, and enables industry networking and collaboration.EDTA’s membership includes vehicle and equipment manufacturers, energy companies, technology developers, component suppliers, government agencies and others.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+ <!-----------------------------------Goals------------------------------------------->
+
+<div class="container panel-margin-woeigo">
+	<div class="row">
+    	<div class="col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+    		<div class="panel panel-default">
+      			<div class="panel-heading panel-heading-woeigo">
+      				<i class="fa fa-star"></i><strong> Goals</strong>
+      			</div> 
+      			<div class="panel-body">
+                        <ul class="ds-btn">
+                        <!--<li>
+                             <a class="btn btn-lg " href="http://dotstrap.com/">
+                          <i class="glyphicon glyphicon-link pull-left"></i><span>User Profile<br><small>Lorem ipsum dolor</small></span></a> 
+                            
+                        </li>-->
+                        <li>
+                             <a class="btn btn-lg btn-info" href="#">
+                          <i class="glyphicon glyphicon-user pull-left"></i><span>Efficient Energy</span></a> 
+                            
+                        </li>
+                        <li>
+                             <a class="btn btn-lg btn-info " href="#">
+                         <i class="glyphicon glyphicon-tree-deciduous pull-left"></i><span>More Environmental Friendly</span></a> 
+                            
+                        </li>
+                        <li>
+                             <a class="btn btn-lg btn-info" href="#">
+                         <i class="glyphicon glyphicon-cloud pull-left"></i><span>Less Traffic Noise</span></a> 
+                            
+                        </li>
+                        <li>
+                               <a class="btn btn-lg btn-info" href="#">
+                        <i class="glyphicon glyphicon-globe pull-left"></i><span>Cheaper to Operate</span></a> 
+                        </li>
+                        <li>
+                               <a class="btn btn-lg btn-info" href="#">
+                         <i class="glyphicon glyphicon-wrench pull-left"></i><span>Home Recharging</span></a> 
+                        </li>
+                    </ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-----------------------------------Skills Needed------------------------------------------->
+
+
+<div class="container panel-margin-woeigo">
+	<div class="row">
+    	<div class="col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+    		<div class="panel panel-default">
+              <div class="panel-heading panel-heading-woeigo">
+              <i class="fa fa-suitcase"></i> <strong>Skills Needed</strong>
+              </div> 
+    	
+      			<div class="panel-body">
+    				<ul class="skill-ds-btn">
+                    <!--<li>
+                         <a class="btn btn-lg " href="http://dotstrap.com/">
+                      <i class="glyphicon glyphicon-link pull-left"></i><span>User Profile<br><small>Lorem ipsum dolor</small></span></a> 
+                    </li>-->
+                        <li>
+                             <a class="btn-outline btn btn-lg btn-info" href="#">
+                          <i class="glyphicon glyphicon-user pull-left"></i><span>Electrical Engineering</span></a> 
+                            
+                        </li>
+                        <li>
+                             <a class="btn-outline btn btn-lg btn-success " href="#">
+                         <i class="glyphicon glyphicon-tree-deciduous pull-left"></i><span>Event Planning</span></a> 
+                            
+                        </li>
+                        <li>
+                             <a class="btn-outline btn btn-lg btn-danger" href="#">
+                         <i class="glyphicon glyphicon-cloud pull-left"></i><span>Communication</span></a> 
+                            
+                        </li>
+                        <li>
+                               <a class="btn-outline btn btn-lg btn-warning" href="#">
+                        <i class="glyphicon glyphicon-globe pull-left"></i><span>Project Management</span></a> 
+                        </li>
+                        <li>
+                               <a class="btn-outline btn btn-lg btn-info" href="#">
+                         <i class="glyphicon glyphicon-wrench pull-left"></i><span>Web Design</span></a> 
+                        </li>
+                        
+                        <li>
+                               <a class="btn-outline btn btn-lg btn-warning" href="#">
+                        <i class="glyphicon glyphicon-book pull-left"></i><span>MS Office</span></a> 
+                        </li>
+                        
+                        <li>
+                             <a class="btn-outline btn btn-lg btn-info" href="#">
+                         <i class="glyphicon glyphicon-globe pull-left"></i><span>French</span></a> 
+                            
+                        </li>
+                    </ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<!-----------------------------------People ------------------------------------------->
+
+
+<div class="container panel-margin-woeigo">
+	<div class="row">
+    	<div class="col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+    		<div class="panel panel-default">
+      			<div class="panel-heading panel-heading-woeigo">
+      				<i class="fa fa-user"></i><strong> People who has helped </strong>
+      			</div> 
+      			<div class="panel-body">
+                  <ul class="people-ds-btn">
+          <!--<li>
+               <a class="btn btn-lg " href="http://dotstrap.com/">
+            <i class="glyphicon glyphicon-link pull-left"></i><span>User Profile<br><small>Lorem ipsum dolor</small></span></a> 
+          </li>-->
+                    <li>
+                    <button type="button" class="btn btn-success btn-circle btn-xl"><i class="fa fa-user fa-2x"></i></button>
+                    <br><h5> Sarah Lee</h5>   
+                    </li>
+                    <li>
+                    <button type="button" class="btn btn-danger btn-circle btn-xl"><i class="fa fa-user fa-2x"></i></button>
+                    <br><h5>Kate Brown</h5>     
+                    </li>
+                    
+                    <li>
+                    <button type="button" class="btn btn-warning btn-circle btn-xl"><i class="fa fa-user fa-2x"></i></button> 
+                    <br><h5>John Ivans</h5>
+                    </li>
+                     <li>
+                    <button type="button" class="btn btn-info btn-circle btn-xl"><i class="fa fa-user fa-2x"></i></button>
+                    <br><h5>Tim Littlewood</h5>
+                    </li>       
+                     <li>
+                    <button type="button" class="btn btn-success btn-circle btn-xl"><i class="fa fa-user fa-2x"></i></button>
+                    <br><h5>Moha Sawan </h5> 
+                    </li>        
+                     <li>
+                    <button type="button" class="btn btn-info btn-circle btn-xl"><i class="fa fa-user fa-2x"></i></button>
+                    <br><h5>Pansy Hong</h5> 
+                    </li>        
+                     <li>
+                    <button type="button" class="btn btn-warning btn-circle btn-xl"><i class="fa fa-user fa-2x"></i></button>
+                    <br><h5>Sunny Arora</h5> 
+                    </li>     
+                   </ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+ <!-----------------------------------Costs------------------------------------------->
+ <!---------See javascript at the bottom for pie chart values---------->
+   
+<div class="container panel-margin-woeigo">
+	<div class="row">
+      <div class="col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+          <div class="panel panel-default ">
+            <div class="panel-heading panel-heading-woeigo">
+            	<i class="fa fa-star"></i><strong> Cost Breakdown </strong>
+            </div>        
+            <div class="panel-body">   
+              	<div class="row">  
+                	<div class="col-xs-12 col-lg-4 pie-chart-placement ">
+                      <div id="canvas-holder ">
+                          <canvas id="chart-area" width="284" height="284"/>
+                      </div>
+                   </div> 
+                	<div class="col-xs-12 col-lg-8">
+                      <div class="table-responsive">
+                                      <table class="table ">
+                                          <thead>
+                                              <tr>
+                                                  <th>Item</th>
+                                                  <th>Cost</th>
+                                                  <th>Percentage</th>
+                                              </tr>
+                                          </thead>
+                                          
+                                          <tbody>
+                                          
+                                          	 <tr >
+                                                  <td><strong>Total</strong></td>
+                                                  <td><strong>$1,000,000</strong></td>
+                                                  <td></td>
+                                              </tr>
+                                              
+                                              <tr >
+                                                  <td style="background-color:#FF8989; color:white;" >Engineering</td>
+                                                  <td>$300,000</td>
+                                                  <td>50%</td>
+                                              </tr>
+                                              <tr >
+                                                  <td style="background-color:#46BFBD; color:white;">Marketing</td>
+                                                  <td>$50,000</td>
+                                                  <td>5%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td style="background-color:#FFD657; color:white;">Design</td>
+                                                  <td>100,000</td>
+                                                  <td>20%</td>
+                                              </tr>
+                                              <tr >
+                                                  <td style="background-color:#5CCCE6; color:white;">Testing</td>
+                                                  <td>40,000</td>
+                                                  <td>5%</td>
+                                              </tr>
+                                              <tr >
+                                                  <td style="background-color:#BCBCBC; color:white;">Material</td>
+                                                  <td>100,000</td>
+                                                  <td>20%</td>
+                                              </tr>
+                                             
+                                          </tbody>
+                                      </table>
+                         </div>
+                		</div>
+                </div>
+              </div>
+          </div>
+      </div>
+	</div>
+</div>      
+     
+     
+     
+<!-----------------------------------Dependency------------------------------------------->     
+<div class="container panel-margin-woeigo">
+	<div class="row">
+      <div class="col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+          <div class="panel panel-default ">
+            <div class="panel-heading panel-heading-woeigo">
+            <i class="fa fa-star"></i><strong> Dependency </strong>
+            </div>        
+              <div class="panel-body">   
+                <p>- Clean and efficient energy</p>
+                <p> - Less road and traffic noise from motor</p>
+                <p> - Inexpensive to purchase and maintain</p>
+                <p> - Easy and quickly to recharge</p>
+              </div>
+          </div>
+      </div>
+	</div>
+</div>        
+        
+             
+        
+</div> <!----------page wrapper , partially to keep footer stick to the bottom-->
+
+		
+    <footer>
+        <div class="container site-footer">
+            <div class="row">
+                <div class="col-lg-8">
+                    <ul class="list-inline">
+                        <li><a href="#home">About</a>
+                        </li>
+                       <li class="footer-menu-divider">&sdot;</li>
+                        <li><a href="help.html">Help</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li><a href="#services">Business</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li><a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted small">Copyright &copy; WOEIGO 2014. All Rights Reserved</p>
+                    
+                </div>
+                <div class="col-lg-4">
+                	<iframe class ="facebook" src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fwoeigo%2F&amp;width&amp;layout=standard&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:80px;" allowTransparency="true"></iframe>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    
+
+		
+    <!-- Search interaction at the top -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script type="text/javascript">
+	$(document).ready(function(e){
+    $('.search-panel .dropdown-menu').find('a').click(function(e) {
+		e.preventDefault();
+		var param = $(this).attr("href").replace("#","");
+		var concept = $(this).text();
+		$('.search-panel span#search_concept').text(concept);
+		$('.input-group #search_param').val(param);
+			});
+		});
+	</script>
+    
+    
+    
+    
+    
+    <!---------pie chart link---------->
+    <script src="js/Chart.js"></script>
+    
+    <!---------pie chart values---------->
+    <script>
+
+		var pieData = [
+				{
+					value: 300000,
+					color:"#FF8989",
+					highlight: "#FF5A5E",
+					label: "Engineering"
+				},
+				{
+					value: 50000,
+					color: "#46BFBD",
+					highlight: "#5AD3D1",
+					label: "Marketing"
+				},
+				{
+					value: 100000,
+					color: "#FFD657",
+					highlight: "#FFC870",
+					label: "Design"
+				},
+				{
+					value: 40000,
+					color: "#5CCCE6",
+					highlight: "#A8B3C5",
+					label: "Testing"
+				},
+				{
+					value: 120000,
+					color: "#BCBCBC",
+					highlight: "#616774",
+					label: "Material"
+				}
+
+			];
+
+			window.onload = function(){
+				var ctx = document.getElementById("chart-area").getContext("2d");
+				window.myPie = new Chart(ctx).Pie(pieData);
+			};
+
+	</script>
+
+</body>
+
+</html>

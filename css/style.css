@@ -614,9 +614,21 @@ a.btn-mod:focus{
 .btn-mod.btn-w{
   	color: #000;
   	background: rgba(255,255,255, .9);
-    background: rgba(170,170,170, .1);
+    background: rgba(170,170,170, .5);
+    
 
 }
+
+.btn-mod.btn-w.btn-woeigo-web{
+  	color: #000;
+  	background: rgba(255,255,255, .7);
+
+    
+
+}
+
+
+
 .btn-mod.btn-w:hover,
 .btn-mod.btn-w:focus{
   	color: #000;

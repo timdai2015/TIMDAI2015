@@ -32,6 +32,8 @@
         <!-- Modernizr -->
         <script src="js/modernizr.js"></script> 
         
+   
+        <!-- type animation       -->
         
         
         <!-- Color Schemes :: Uncomment one for apply :: -->        
@@ -83,10 +85,8 @@
                 <div class="js-height-full">
                     
                     <!-- Video BG Init -->
-<!--
                     <div class="player" data-property="{videoURL:'https://youtu.be/V3aOriizMyo',containment:'#home',autoPlay:true, showControls:true, showYTLogo: false, mute:true, startAt:0, opacity:1}">
                     </div>
--->
                      <!-- End Video BG Init -->
                     
                     <!-- Home Page Content -->
@@ -103,12 +103,13 @@
                                             Welcome
                                         </div>
                                         
-                                        <div class="hs-line-7 uppercase mb-30 mx-xs-20">
+                                        <div class="hs-line-7 uppercase mb-30 mx-xs-20" style="font-size:42px;">
 <!--                                            <span class="text-rotate">-->
-                                            <span>
-                                                Create Meaning.
+                                            <span id="typed">
                                             </span>
                                         </div>
+                                        
+                                        
                                         
                                         <div class="local-scroll">
                                             <a href="#about" class="btn btn-mod btn-w  btn-circle btn-medium hidden-xs">Learn More</a>
@@ -949,9 +950,46 @@
         <!--Retina /magnifying glass effect-->
         <script type="text/javascript" src="js/mag-glass.js"></script>
 
+        <!-- type animation       -->
+        <script src="js/typed.js"></script>
         
         
- 
+        
+<script>
+    $(function(){
+
+        $("#typed").typed({
+            strings: ["Create meaning", "Craft by heart.", "Program by logic."],
+            typeSpeed: 150,
+            backDelay: 500,
+            loop: false,
+            contentType: 'html', // or text
+            // defaults to false for infinite loop
+            loopCount: false,
+            callback: function(){ foo(); },
+            resetCallback: function() { newTyped(); }
+        });
+
+        $(".reset").click(function(){
+            $("#typed").typed('reset');
+        });
+
+    });
+
+    function newTyped(){ /* A new typed object */ }
+
+    function foo(){ console.log("Callback"); }
+
+    </script>        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
     </body>
 </html>

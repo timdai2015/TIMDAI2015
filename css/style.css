@@ -6731,7 +6731,12 @@ section:hover .small-item-carousel .owl-next{
 }  
 
 
+/*------cursor icons*/
 
+.zoom-in {
+    
+    cursor: zoom-in;
 
+}
 
 

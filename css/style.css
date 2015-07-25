@@ -1523,6 +1523,13 @@ By Svein Erik Farstad*/
 	float: left;
 	border-left: 1px solid rgba(255,255,255, .1);
 }
+
+.nbc-menu-button-no-border{
+	width: 68px;
+	height: 65px;
+	position: relative;
+	float: left;
+}
 .nbc-bg .nbc-menu-button,
 .js-nbc-bg .nbc-menu-button{
 	border-left: 1px solid rgba(255,255,255, .1);
@@ -4978,6 +4985,15 @@ figcaption {
     font-size: 28px;
     position: relative;
     top: 4px;
+}
+
+.bot-menu-icon-project{
+    color:rgba(255,255,255, .7);;
+    display: inline-block;
+    font-size: 32px;
+    position: relative;
+    top: 10px;
+    left:17px;
 }
 
 

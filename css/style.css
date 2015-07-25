@@ -6625,7 +6625,7 @@ section:hover .small-item-carousel .owl-next{
 	top:0;
 	left:0;
 	z-index:88;
-	opacity:.5;
+	opacity:0 ;
 	background:url(../images/pattern-bg-3.png);
 	}
 

@@ -1521,7 +1521,7 @@ By Svein Erik Farstad*/
 	height: 65px;
 	position: relative;
 	float: left;
-	border-left: 1px solid rgba(255,255,255, .1);
+/*	border-left: 1px solid rgba(255,255,255, .1);*/
 }
 
 .nbc-menu-button-no-border{

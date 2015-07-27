@@ -73,8 +73,8 @@ a:hover, a:focus {
 
 .codrops-header {
 	position: relative;
-	margin: 0 auto;
-	padding: 5px 5px;
+/*	margin: 0 auto;*/
+/*	padding: 5px 5px;*/
 	text-align: right;
 }
 
@@ -94,10 +94,10 @@ a:hover, a:focus {
 }
 
 .codrops-header span {
-	display: block;
-	padding: 0 0 0.6em 0.1em;
+/*	display: block;*/
+/*	padding: 0 0 0.6em 0.1em;*/
 	font-size: 60%;
-	color: rgba(0,0,0,0.3);
+/*	color: rgba(0,0,0,0.3);*/
 }
 
 /* To Navigation Style */
@@ -167,18 +167,18 @@ a:hover, a:focus {
 }
 
 .codrops-demos a {
-	border-radius: 5px;
+	border-radius: 1px;
 	padding: 10px 15px;
 	display: inline-block;
 	font-weight: 400;
-	font-size: 90%;
+	font-size: 32px;
 	margin: 0 0px;
 	background: #237dac;
 	color: #fff;
 }
 
 .demo-drawings .codrops-demos a {
-	border: 2px solid rgba(0,0,0,0.5);
+/*	border: 2px solid rgba(0,0,0,0.5);*/
 	color: rgba(0,0,0,0.5);
 	background: transparent;
 }
@@ -452,4 +452,40 @@ h3 {
 #nav-bottom {
     margin-top:100px;
     text-align: center!important;
+}
+
+
+
+/*-------Menu/Nav------*/
+
+.nav-bar-compact{
+	min-height: 40px;
+	position: fixed;
+	top: 10px;
+	right: 10px;	
+	background: rgba(0,0,0, 0);
+	cursor: pointer;
+	
+	-webkit-transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940); 
+    -moz-transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940); 
+    -o-transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940); 
+    transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
+	
+	z-index: 201;
+}
+
+.nbc-menu-button-no-border{
+	width: 68px;
+	height: 65px;
+	position: relative;
+	float: left;
+}
+
+.bot-menu-icon-project{
+    color:rgba(255,255,255, .7);;
+    display: inline-block;
+    font-size: 32px;
+    position: relative;
+    top: 10px;
+    left:17px;
 }

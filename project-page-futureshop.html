@@ -8,8 +8,9 @@
 		<meta name="description" content="SVG Drawing Animation: Line drawing animation with illustration fade-in" />
 		<meta name="keywords" content="svg, line drawing, animation, illustration, fade in, web design, responsive" />
 		<meta name="author" content="Codrops" />
-		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="shortcut icon" href="">
 		<link rel="stylesheet" type="text/css" href="css/svg-drawing/normalize.css" />
+<!--        the main css is here-->
 		<link rel="stylesheet" type="text/css" href="css/svg-drawing/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/svg-drawing/component.css" />
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:700italic,700,300,800,400' rel='stylesheet' type='text/css'>        
@@ -22,7 +23,15 @@
         <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="css/animations.min.css">      
         <link rel="stylesheet" href="css/vertical-rhythm.min.css">
-            
+        
+        
+<!-- For the font icons/ the bigstream have them as imports in style.css-->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/simple-line-icons.css">
+        
+<!--   tooltip     -->
+        <link rel="stylesheet" href="css/tooltip-flip.css">
+        
 		<!--[if IE]>
 			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -36,14 +45,69 @@
 				<span class="right"><a class="codrops-icon codrops-icon-drop" href="timdai.html"><span>Back to Home</span></a></span>
 			</div>
 -->
-			<header class="codrops-header">
-<!--				<h1>SVG Drawing Animation <span>Line drawing animation with illustration fade-in</span></h1>-->
-				<nav class="codrops-demos">
-					<a id="gohome" class="" href="timdai.html#portfolio">Home</a>
-					<a id="nextproject" href="project-page-small-projects.html">Previous</a>
-					<a id="nextproject" href="project-page-woeigo.html">Next</a>
-				</nav>	
-			</header>
+                
+            
+            
+            <header class="codrops-header">
+
+                    <nav class="codrops-demos">
+                      
+                        
+                        <a class="tooltip tooltip-effect-1" href="project-page-small-projects.html"><i class="icon-arrow-left"></i>
+                            <span class="tooltip-content">
+                                <span class="tooltip-front"><img src="images/prev1.png" alt="user4"/></span>
+                                <span class="tooltip-back">Previous Project</span>
+                            </span>
+                        </a>     
+                        
+                        <a class="tooltip tooltip-effect-1" href="project-page-woeigo.html"><i class="icon-arrow-right"></i>
+                            <span class="tooltip-content">
+                                <span class="tooltip-front"><img src="images/next1.png" alt="next project"/></span>
+                                <span class="tooltip-back">Next Project</span>
+                            </span>
+                        </a>
+                        
+                        <a id="gohome" class="" href="timdai.html#portfolio"><i class="icon-home"></i></a>
+                    </nav>	
+
+                    
+                    
+                   
+                    
+                </header>
+
+<!--
+                <div class="nav-bar-compact clearfix">
+                
+                <div class="nbc-menu-button-no-border">
+                    <a href="timdai.html#portfolio">
+                    <span class="bot-menu-icon-project" style="color:dimgrey;">
+                        <i class="icon-home"></i>
+                    </span>
+                    </a>
+                </div>
+                
+                <div class="nbc-menu-button">
+                    <a href="project-page-small-projects.html">
+                    <span class="bot-menu-icon-project"  style="color:dimgrey;">
+                        <i class="icon-arrow-left"></i>
+                    </span>
+                    </a>
+                </div>
+                
+                <div class="nbc-menu-button">
+                    <a href="project-page-woeigo.html">
+                    <span class="bot-menu-icon-project"  style="color:dimgrey;">
+                        <i class="icon-arrow-right  "></i>
+                    </span>
+                    </a>
+                </div>                
+                
+                </div> 
+-->
+
+            <!-- End top menu for project pages -->               
+            
             
             
 			<div id="main-svg-drawing" class="main-svg-drawing-class">
@@ -236,11 +300,27 @@
 -->
         
 			<header class="codrops-header" id="nav-bottom">
-				<nav class="codrops-demos">
-					<a id="gohome" class="" href="timdai.html#portfolio">Home</a>
-					<a id="nextproject" href="project-page-small-projects.html">Previous Project</a>
-					<a id="previousproject" href="project-page-woeigo.html">Next Project</a>
-				</nav>	
+                    <nav class="codrops-demos">
+                      
+                        
+                        <a class="tooltip tooltip-effect-1" href="project-page-small-projects.html"><i class="icon-arrow-left"></i>
+                            <span class="tooltip-content">
+                                <span class="tooltip-front"><img src="images/prev1.png" alt="user4"/></span>
+                                <span class="tooltip-back">Previous Project</span>
+                            </span>
+                        </a>     
+                        
+                        <a class="tooltip tooltip-effect-1" href="project-page-woeigo.html"><i class="icon-arrow-right"></i>
+                            <span class="tooltip-content">
+                                <span class="tooltip-front"><img src="images/next1.png" alt="next project"/></span>
+                                <span class="tooltip-back">Next Project</span>
+                            </span>
+                        </a>
+                        
+                        <a id="gohome" class="" href="timdai.html#portfolio"><i class="icon-home"></i></a>
+                    </nav>	
+                
+                                
 			</header>
             
             

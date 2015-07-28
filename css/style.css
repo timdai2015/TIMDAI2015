@@ -4939,7 +4939,7 @@ figcaption {
 
 
 /* ==============================
-   Bottom menu
+   "Bottom" menu (now used on the top)
    ============================== */
 
 .bot-menu{
@@ -4992,8 +4992,45 @@ figcaption {
     display: inline-block;
     font-size: 32px;
     position: relative;
+    top: 2px;
+    left:17px;
+}
+
+.bot-menu-icon-project-wechatgogo{
+    color:rgba(255,255,255, 1);
+    display: inline-block;
+    font-size: 32px;
+    position: relative;
     top: 10px;
     left:17px;
+}
+
+.bot-menu-icon-project-wechatgogo:hover{
+    color:rgba(255,255,255, 0.8);
+
+}
+
+
+
+.bot-menu-icon-project:hover{
+    color:rgba(255,255,255, 1);
+}
+
+
+.menu-icon-text{
+
+    font-size:10px; 
+    display:block; 
+    text-align:center;
+    margin-top:-2px;
+}
+
+.menu-icon-text-wechatgogo{
+
+    font-size:10px; 
+    display:block; 
+    text-align:center;
+    margin-top:4px;
 }
 
 

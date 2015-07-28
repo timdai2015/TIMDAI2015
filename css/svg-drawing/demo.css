@@ -76,6 +76,7 @@ a:hover, a:focus {
 /*	margin: 0 auto;*/
 /*	padding: 5px 5px;*/
 	text-align: right;
+    right:10px;
 }
 
 .demo-drawings .codrops-header {
@@ -168,7 +169,7 @@ a:hover, a:focus {
 
 .codrops-demos a {
 	border-radius: 1px;
-	padding: 10px 15px;
+	padding: 5px 15px;
 	display: inline-block;
 	font-weight: 400;
 	font-size: 32px;
@@ -179,19 +180,19 @@ a:hover, a:focus {
 
 .demo-drawings .codrops-demos a {
 /*	border: 2px solid rgba(0,0,0,0.5);*/
-	color: rgba(0,0,0,0.5);
+	color: rgba(0,0,0,0.6);
 	background: transparent;
 }
 
 .demo-drawings .codrops-demos a:hover,
 .demo-drawings .codrops-demos a.current-demo {
-	opacity: 0.9;
-	background: rgba(0,0,0,0.1);;
+	color: rgba(0,0,0,0.9);
+	background: rgba(0,0,0,0.0);
 }
 
 .codrops-demos a:hover,
 .codrops-demos a.current-demo {
-	background: #5ca9d6;
+
 }
 
 
@@ -452,6 +453,7 @@ h3 {
 #nav-bottom {
     margin-top:100px;
     text-align: center!important;
+    right:0px;
 }
 
 

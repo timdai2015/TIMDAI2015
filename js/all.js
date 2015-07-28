@@ -185,7 +185,7 @@
                 
                 setTimeout(function(){
                     nbc_menu_wrap.hide();
-                }, 200);
+                }, 300);
                 
                 
             }

@@ -118,7 +118,7 @@ Primary use:    MultiPurpose One Page Template
     
 	.split-section-headings .section-title{
 		font-size: 26px;
-		letter-spacing: 2px;
+		letter-spacing: 0px;
 	}
 	.service-descr .service-title {
         margin-bottom: 20px;

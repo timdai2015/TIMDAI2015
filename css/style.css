@@ -4462,7 +4462,7 @@ figcaption {
     background: rgba(255,255,255, .9);
     font-size: 11px;
     font-weight: 700;
-    text-transform: uppercase;
+/*    text-transform: uppercase;*/
     text-align: center;
     letter-spacing: 1px;
     line-height: 1.1;
@@ -4566,7 +4566,7 @@ figcaption {
     overflow: hidden;
     -webkit-backface-visibility: hidden;
     -webkit-transform: translateZ(0); 
-    background: #222;
+    background: lightgrey;
     color: #707070;
 }
 .blog-link:after{
@@ -4591,7 +4591,7 @@ figcaption {
     font-size: 13px;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 9px;
+    letter-spacing: 4px;
     
     -webkit-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);  
     -moz-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000); 
@@ -4604,7 +4604,7 @@ figcaption {
     font-weight: 700;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: #eaeaea;
+/*    color: #eaeaea;*/
     
     -webkit-transition: all 0.37s cubic-bezier(0.300, 0.100, 0.580, 1.000);  
     -moz-transition: all 0.37s cubic-bezier(0.300, 0.100, 0.580, 1.000); 
@@ -4641,7 +4641,7 @@ figcaption {
 
 .blog-link:hover .bl-icon{
     margin-top: -70px;
-    color: rgba(255,255,255, .1);
+    color: rgba(255,255,255, .7);
     -webkit-transform: scale(1.4);
     -moz-transform: scale(1.4);
     -o-transform: scale(1.4);
@@ -4959,7 +4959,7 @@ figcaption {
     display: inline-block;
     padding: 0 20px;
     font-size: 18px;
-    color: #555;
+    color: lightgray;
     white-space: normal;
     text-decoration: none;
     border-right: 1px solid #202020;

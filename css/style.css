@@ -933,7 +933,7 @@ a.btn-mod:focus{
 	line-height: 43px;
 	white-space: nowrap;
 	position: absolute;
-	bottom: 20px;
+	bottom: 50px;
 	left: 50%;
 	font-size: 10px;
 	font-weight: 700;
@@ -961,12 +961,12 @@ a.btn-mod:focus{
 }
 .scroll-down.static,
 .scroll-down.static{
-	color: rgba(255,255,255, .4) !important;
+	color: rgba(255,255,255, .7) !important;
 }
 .scroll-down.static:hover,
 .scroll-down.static:focus{
 	letter-spacing: 3px;
-	color: rgba(255,255,255, .85) !important;
+	color: rgba(255,255,255, 1) !important;
 }
 
 /*adding a left click mouse button upon hovering*/
@@ -1900,6 +1900,15 @@ By Svein Erik Farstad*/
 	font-size: 16px;
     text-align: center;
 }
+
+.nbc-social-icons{
+    color:grey;
+}
+
+.nbc-social-icons:hover{
+    color:white;
+}
+
 .nbc-social-links > a{
 	display: inline-block;
 	width: 20px;
@@ -5829,7 +5838,7 @@ a.blog-item-more:hover{
 	text-align: center;
 }
 .pricing-item-inner{
-	border: 1px solid #eaeaea;
+/*	border: 1px solid #eaeaea;*/
 	vertical-align: middle;
 	
 	-webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);  
@@ -5878,7 +5887,7 @@ a.blog-item-more:hover{
     margin: 0 -20px 30px;
     padding: 0;
 	
-    color: #777;
+/*    color: #777;*/
     font-size: 11px;
     font-weight: 400;
     text-transform: uppercase;	
@@ -5887,14 +5896,14 @@ a.blog-item-more:hover{
 .pr-list li{
 	padding: 12px 20px;
 	list-style: none;
-	border-bottom: 1px solid #f1f1f1;
+/*	border-bottom: 1px solid #f1f1f1;*/
 }
 .pr-list li:first-child{
-	border-top: 1px solid #f1f1f1;
+/*	border-top: 1px solid #f1f1f1;*/
 }
 .pricing-num{
     font-family: Montserrat, Arial, Helvetica, sans-serif;
-	font-size: 40px;
+	font-size: 32px;
 	font-weight: 700;
 	line-height: 1;
 	
@@ -5911,7 +5920,7 @@ a.blog-item-more:hover{
 .pr-button{
     margin: 30px -20px 0;
     padding-top: 30px;
-    border-top: 1px solid #f1f1f1;
+/*    border-top: 1px solid #f1f1f1;*/
 }
 .pr-per{
     color: #999;

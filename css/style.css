@@ -3016,8 +3016,6 @@ a.logo:hover{
 
 
 
-
-
 /* -------------------Hover State -------------------*/
 
 
@@ -3163,6 +3161,18 @@ a.logo:hover{
     transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
 }
 */
+
+
+/*----brain positions----*/
+
+.brains-position{
+
+    margin-top:150px;
+    padding-left:137px;
+}
+
+
+
 
 
 

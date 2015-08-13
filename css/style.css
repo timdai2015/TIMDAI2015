@@ -3168,7 +3168,7 @@ a.logo:hover{
 
 
 .alt-service-wrap:hover .alt-service-item:after{
-    opacity: 1;
+    opacity: 0.5;
 }
 
 .alt-service-butt{

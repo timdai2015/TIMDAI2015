@@ -738,6 +738,13 @@ Primary use:    MultiPurpose One Page Template
     .fixed-height-large{
         min-height: 400px;
     }
+    
+    #logo-timdai-image{
+    
+        display: none;
+
+    
+    }
 }
 
 

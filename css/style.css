@@ -5969,6 +5969,9 @@ a.blog-item-more:hover{
 	font-size: 48px;
 	text-align: center;
 	color: rgba(255,255,255, .7);
+    /*  -------- color of the two arrows  */
+    	color: rgba(0,0,0, .3 );
+
 	
 	text-shadow: 1px 1px 0px rgba(0, 0, 0, .1);
     
@@ -5988,8 +5991,9 @@ a.blog-item-more:hover{
 }
 .owl-prev:hover,
 .owl-next:hover{
-	color: rgba(255,255,255, .95);
-	
+	color: rgba(255,255,255, .95); /* original color */
+	color: rgba(0,0,0, .6);
+    
 	-webkit-transition: 0 none !important;  
     -moz-transition: 0 none !important;  
 	 -ms-transition: 0 none !important;
@@ -6043,9 +6047,13 @@ a.blog-item-more:hover{
 }
 .owl-page:hover span{
 	background: rgba(255,255,255, .45);
+    background: rgba(0,0,0, .65);
+
 }
 .owl-page.active span{
 	background: rgba(255,255,255, .65);
+    background: rgba(0,0,0, .5);
+
 }
 
 .item-carousel .owl-prev{
@@ -6077,7 +6085,7 @@ section:hover .item-carousel.owl-carousel .owl-next{
 }
 .work-full-slider .owl-pagination,
 .content-slider .owl-pagination{
-	bottom: 15px;
+	bottom: 0px;
 }
 
 .single-carousel,

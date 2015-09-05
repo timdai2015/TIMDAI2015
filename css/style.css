@@ -6803,9 +6803,9 @@ section:hover .small-item-carousel .owl-next{
 
 .cd-image-label {
   position: absolute;
-  bottom: 0;
-  right: 0;
-  color: #ffffff;
+  bottom: -15px;
+  right: -5px;
+  color: black;
   padding: 1em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

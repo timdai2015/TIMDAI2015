@@ -7026,3 +7026,28 @@ section:hover .small-item-carousel .owl-next{
         }
 
 
+
+
+
+/*-------------Magifying glass for other projects-------------*/
+
+
+.retina-glass-tip-general {
+
+    position:absolute; 
+    right:62%; 
+    top:344px; 
+    width:auto;
+}
+
+.retina-glass-tip-2-general {
+
+    position:absolute; 
+    left:63%; 
+    top:344px; 
+    width:auto;
+
+}    
+
+
+
